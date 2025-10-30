@@ -57,7 +57,7 @@
 | **YouTube** | [Möbius Channel](https://youtube.com/@mobius_org) | Обучающие видео и анонсы |
 | **GitHub** | [Mobius-Original](https://github.com/waratecs123/Mobius-Original) | Исходный код и issues |
 | **Donation Alerts** | [Поддержать проект](https://www.donationalerts.com/r/mobius_org) | Финансовая поддержка |
-| **Обратная связь** | [Google Forms](https://docs.google.com/forms/) | Предложения и баг-репорты |
+| **Обратная связь** | [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLScEEinTyMzpbWY_KdjIfyg9CuAHMhUTJnhjrOAo_My0dIXXog/viewform?usp=dialog) | Предложения и баг-репорты |
 
 ---
 
@@ -120,4 +120,4 @@
 | **YouTube** | [Möbius Channel](https://youtube.com/@mobius_org) | Tutorials and announcements |
 | **GitHub** | [Mobius-Original](https://github.com/waratecs123/Mobius-Original) | Source code and issues |
 | **Donation Alerts** | [Support Project](https://www.donationalerts.com/r/mobius_org) | Financial support |
-| **Feedback** | [Google Forms](https://docs.google.com/forms/) | Suggestions and bug reports |
+| **Feedback** | [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLScEEinTyMzpbWY_KdjIfyg9CuAHMhUTJnhjrOAo_My0dIXXog/viewform?usp=dialog) | Suggestions and bug reports |
