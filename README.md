@@ -2,86 +2,62 @@
 
 ## 🌟 О проекте
 
-**Möbius** — это инновационная универсальная платформа, объединяющая все ключевые инструменты для цифрового творчества в одном пространстве. Вместо десятков разрозненных приложений мы предлагаем единую экосистему для работы с видео, аудио, графикой и мультимедиа.
+**Möbius** — это инновационная универсальная платформа, объединяющая все ключевые инструменты для цифрового творчества в одном пространстве.
 
 ### 🚀 Основные преимущества
-- **🎯 Все в одном** — больше не нужно переключаться между программами
-- **🤖 AI-интеграция** — умные помощники для творческих задач
-- **☁️ Облачная синхронизация** — работайте из любой точки мира
-- **🎨 Интуитивный интерфейс** — подходит как для новичков, так и для профессионалов
-- **💫 Бесшовная интеграция** — все инструменты идеально работают вместе
+| Преимущество | Описание |
+|-------------|----------|
+| **🎯 Все в одном** | Больше не нужно переключаться между программами |
+| **🤖 AI-интеграция** | Умные помощники для творческих задач |
+| **☁️ Облачная синхронизация** | Работайте из любой точки мира |
+| **🎨 Интуитивный интерфейс** | Подходит как для новичков, так и для профессионалов |
+| **💫 Бесшовная интеграция** | Все инструменты идеально работают вместе |
 
 ## 🛠 Приложения платформы
 
-### 🎵 **Chopin Keys** — DAW с AI-ассистентом
-Профессиональная звуковая рабочая станция с поддержкой VST-плагинов и AI-помощником для композиции.
-
-### 🎨 **Picasso Art** — Графический редактор с AI-инструментами
-Мощный редактор для цифровых художников и фотографов с поддержкой слоев и AI-фильтрами.
-
-### 🎬 **Lumière Cut** — Видеоредактор профессионального уровня
-Многодорожечный монтаж, цветокоррекция и рендеринг в 4K/8K.
-
-### 🔗 **Fibonacci Scan** — Стильные QR-коды с аналитикой
-Генератор и сканер QR-кодов с кастомизацией дизайна и отслеживанием статистики.
-
-### 🗣 **Marilyn Tone** — Синтез речи и голосовые персонажи
-Преобразование текста в речь с различными голосовыми персонажами и эмоциями.
-
-### 📹 **Tarantino Catch** — Запись экрана и веб-камеры
-Профессиональная запись с синхронизацией нескольких источников.
-
-### 🎹 **Newton Flow** — Создание битов на тачпаде
-Интерактивный MIDI-контроллер для создания музыки на тачпаде.
-
-### 🎨 **Mondrian Grid** — Анализ цвета и работа с палитрами
-Профессиональные инструменты для работы с цветовыми схемами.
-
-### 🔊 **William Wave** — Аудио-редактор с современным интерфейсом
-Комплексная обработка звука с визуализацией и эффектами.
-
-### 🌀 **Kailed AI** — Генератор абстрактных узоров и текстур
-Создание уникальных паттернов с помощью AI-алгоритмов.
-
-### 🔄 **Gagarin Bridge** — Универсальный конвертер файлов
-Пакетная обработка медиафайлов, документов и изображений.
-
-### 📥 **Jobs Archive** — Загрузчик видео до 8K качества
-Скачивание видео с популярных платформ в высоком разрешении.
-
-### ✨ **Michael Byte** — 3D-текст и типографика
-Профессиональные инструменты для работы с текстовыми слоями.
-
-### 🖼 **Picasso Art Lite** — Быстрая обработка фотографий
-Облегченная версия редактора с пресетами в один клик.
+| Приложение | Статус | Описание |
+|------------|---------|----------|
+| **🎵 Chopin Keys** | 🚧 В разработке | DAW с AI-ассистентом, поддержка VST-плагинов |
+| **🎨 Picasso Art** | 🚧 В разработке | Графический редактор с AI-инструментами и слоями |
+| **🎬 Lumière Cut** | 🚧 В разработке | Видеоредактор профессионального уровня, 4K/8K рендеринг |
+| **🔗 Fibonacci Scan** | 🚧 В разработке | Генератор QR-кодов с аналитикой и кастомизацией |
+| **🗣 Marilyn Tone** | 🚧 В разработке | Синтез речи с голосовыми персонажами и эмоциями |
+| **📹 Tarantino Catch** | 🚧 В разработке | Запись экрана и веб-камеры с синхронизацией |
+| **🎹 Newton Flow** | 🚧 В разработке | MIDI-контроллер для создания музыки на тачпаде |
+| **🎨 Mondrian Grid** | 🚧 В разработке | Анализ цвета и профессиональные палитры |
+| **🔊 William Wave** | 🚧 В разработке | Аудио-редактор с визуализацией и эффектами |
+| **🌀 Kailed AI** | 🚧 В разработке | Генератор абстрактных узоров и текстур |
+| **🔄 Gagarin Bridge** | 🚧 В разработке | Универсальный конвертер файлов, пакетная обработка |
+| **📥 Jobs Archive** | 🚧 В разработке | Загрузчик видео до 8K качества с платформ |
+| **✨ Michael Byte** | 🚧 В разработке | 3D-текст и профессиональная типографика |
+| **🖼 Picasso Art Lite** | 🚧 В разработке | Быстрая обработка фотографий с пресетами |
 
 ## 📦 Скачать
 
-Платформа доступна для всех популярных операционных систем:
-
-- **Windows** (x64) — [Скачать .exe](#)
-- **macOS** (Apple Silicon/Intel) — [Скачать .dmg](#)
-- **Linux** (AppImage) — [Скачать .AppImage](#)
-
-*Мобильные версии для Android и iOS находятся в разработке*
-
-## 🏗 Архитектура
+| Платформа | Статус | Ссылка |
+|-----------|---------|--------|
+| **Windows** (x64) | ✅ Доступно | [Скачать .exe](#) |
+| **macOS** (Apple Silicon/Intel) | ✅ Доступно | [Скачать .dmg](#) |
+| **Linux** (AppImage) | ✅ Доступно | [Скачать .AppImage](#) |
+| **Android** | 🚧 В разработке | Скоро |
+| **iOS** | 🚧 В разработке | Скоро |
 
 ## 👥 Команда разработки
 
-- **Александр Исаев** — Lead Developer & Architect
-- **Игорь Лаленко** — UI/UX Designer & Product Manager
+| Роль | Участник | Контакты |
+|------|----------|----------|
+| **Lead Developer & Architect** | Александр Исаев | [Telegram](https://t.me/mobius_org) |
+| **UI/UX Designer & Product Manager** | Игорь Лаленко | [Telegram](https://t.me/mobius_org) |
 
-## 📄 Лицензия
+## 📞 Контакты и ссылки
 
-Этот проект распространяется под проприетарной лицензией.
-
-## 📞 Контакты
-
-- **Telegram:** [@mobius_org](https://t.me/mobius_org)
-- **YouTube:** [Möbius Channel](https://youtube.com/@mobius_org)
-- **GitHub:** [Mobius-Original](https://github.com/waratecs123/Mobius-Original)
-- **Donation Alerts:** [Поддержать проект](https://www.donationalerts.com/r/mobius_org)
+| Платформа | Ссылка | Описание |
+|-----------|--------|----------|
+| **Telegram** | [@mobius_org](https://t.me/mobius_org) | Основной канал связи |
+| **YouTube** | [Möbius Channel](https://youtube.com/@mobius_org) | Обучающие видео и анонсы |
+| **GitHub** | [Mobius-Original](https://github.com/waratecs123/Mobius-Original) | Исходный код и issues |
+| **Donation Alerts** | [Поддержать проект](https://www.donationalerts.com/r/mobius_org) | Финансовая поддержка |
+| **Обратная связь** | [Google Forms](https://docs.google.com/forms/) | Предложения и баг-репорты |
 
 ---
 
@@ -89,89 +65,59 @@
 
 ## 🌟 About the Project
 
-**Möbius** is an innovative universal platform that brings all key digital creativity tools into one unified space. Instead of dozens of separate applications, we offer a single ecosystem for working with video, audio, graphics, and multimedia.
+**Möbius** is an innovative universal platform that brings all key digital creativity tools into one unified space.
 
 ### 🚀 Key Advantages
-- **🎯 All-in-One** — No more switching between programs
-- **🤖 AI Integration** — Smart assistants for creative tasks
-- **☁️ Cloud Sync** — Work from anywhere in the world
-- **🎨 Intuitive Interface** — Suitable for both beginners and professionals
-- **💫 Seamless Integration** — All tools work perfectly together
+| Advantage | Description |
+|-----------|-------------|
+| **🎯 All-in-One** | No more switching between programs |
+| **🤖 AI Integration** | Smart assistants for creative tasks |
+| **☁️ Cloud Sync** | Work from anywhere in the world |
+| **🎨 Intuitive Interface** | Suitable for both beginners and professionals |
+| **💫 Seamless Integration** | All tools work perfectly together |
 
 ## 🛠 Platform Applications
 
-### 🎵 **Chopin Keys** — DAW with AI Assistant
-Professional digital audio workstation with VST plugin support and AI composition helper.
-
-### 🎨 **Picasso Art** — Graphic Editor with AI Tools
-Powerful editor for digital artists and photographers with layer support and AI filters.
-
-### 🎬 **Lumière Cut** — Professional Video Editor
-Multi-track editing, color grading, and 4K/8K rendering.
-
-### 🔗 **Fibonacci Scan** — Stylish QR Codes with Analytics
-QR code generator and scanner with design customization and tracking statistics.
-
-### 🗣 **Marilyn Tone** — Speech Synthesis & Voice Characters
-Text-to-speech conversion with various voice characters and emotions.
-
-### 📹 **Tarantino Catch** — Screen & Webcam Recording
-Professional recording with multiple source synchronization.
-
-### 🎹 **Newton Flow** — Beat Creation on Touchpad
-Interactive MIDI controller for music creation on touchpad.
-
-### 🎨 **Mondrian Grid** — Color Analysis & Palette Tools
-Professional tools for working with color schemes.
-
-### 🔊 **William Wave** — Audio Editor with Modern Interface
-Comprehensive sound processing with visualization and effects.
-
-### 🌀 **Kailed AI** — Abstract Pattern & Texture Generator
-Unique pattern creation using AI algorithms.
-
-### 🔄 **Gagarin Bridge** — Universal File Converter
-Batch processing of media files, documents, and images.
-
-### 📥 **Jobs Archive** — Video Downloader up to 8K Quality
-Download videos from popular platforms in high resolution.
-
-### ✨ **Michael Byte** — 3D Text & Typography
-Professional tools for working with text layers.
-
-### 🖼 **Picasso Art Lite** — Fast Photo Processing
-Lightweight editor version with one-click presets.
+| Application | Status | Description |
+|-------------|--------|-------------|
+| **🎵 Chopin Keys** | 🚧 In Development | DAW with AI assistant, VST plugin support |
+| **🎨 Picasso Art** | 🚧 In Development | Graphic editor with AI tools and layers |
+| **🎬 Lumière Cut** | 🚧 In Development | Professional video editor, 4K/8K rendering |
+| **🔗 Fibonacci Scan** | 🚧 In Development | QR code generator with analytics and customization |
+| **🗣 Marilyn Tone** | 🚧 In Development | Speech synthesis with voice characters and emotions |
+| **📹 Tarantino Catch** | 🚧 In Development | Screen and webcam recording with synchronization |
+| **🎹 Newton Flow** | 🚧 In Development | MIDI controller for music creation on touchpad |
+| **🎨 Mondrian Grid** | 🚧 In Development | Color analysis and professional palettes |
+| **🔊 William Wave** | 🚧 In Development | Audio editor with visualization and effects |
+| **🌀 Kailed AI** | 🚧 In Development | Abstract pattern and texture generator |
+| **🔄 Gagarin Bridge** | 🚧 In Development | Universal file converter, batch processing |
+| **📥 Jobs Archive** | 🚧 In Development | Video downloader up to 8K quality from platforms |
+| **✨ Michael Byte** | 🚧 In Development | 3D text and professional typography |
+| **🖼 Picasso Art Lite** | 🚧 In Development | Fast photo processing with presets |
 
 ## 📦 Download
 
-Platform available for all popular operating systems:
-
-- **Windows** (x64) — [Download .exe](#)
-- **macOS** (Apple Silicon/Intel) — [Download .dmg](#)
-- **Linux** (AppImage) — [Download .AppImage](#)
-
-*Mobile versions for Android and iOS are in development*
-
-## 🏗 Architecture
+| Platform | Status | Link |
+|----------|--------|------|
+| **Windows** (x64) | ✅ Available | [Download .exe](#) |
+| **macOS** (Apple Silicon/Intel) | ✅ Available | [Download .dmg](#) |
+| **Linux** (AppImage) | ✅ Available | [Download .AppImage](#) |
+| **Android** | 🚧 In Development | Coming Soon |
+| **iOS** | 🚧 In Development | Coming Soon |
 
 ## 👥 Development Team
 
-- **Alexander Isaev** — Lead Developer & Architect
-- **Igor Lalenko** — UI/UX Designer & Product Manager
+| Role | Member | Contacts |
+|------|--------|----------|
+| **Lead Developer & Architect** | Alexander Isaev | [Telegram](https://t.me/mobius_org) |
+| **UI/UX Designer & Product Manager** | Igor Lalenko | [Telegram](https://t.me/mobius_org) |
 
-## 📄 License
+## 📞 Contacts & Links
 
-This project is distributed under a proprietary license.
-
-## 📞 Contacts
-
-- **Telegram:** [@mobius_org](https://t.me/mobius_org)
-- **YouTube:** [Möbius Channel](https://youtube.com/@mobius_org)
-- **GitHub:** [Mobius-Original](https://github.com/waratecs123/Mobius-Original)
-- **Donation Alerts:** [Support Project](https://www.donationalerts.com/r/mobius_org)
-
----
-
-<div align="center">
-
-**⭐ Don't forget to star the repository if you like our project!**
+| Platform | Link | Description |
+|----------|------|-------------|
+| **Telegram** | [@mobius_org](https://t.me/mobius_org) | Main communication channel |
+| **YouTube** | [Möbius Channel](https://youtube.com/@mobius_org) | Tutorials and announcements |
+| **GitHub** | [Mobius-Original](https://github.com/waratecs123/Mobius-Original) | Source code and issues |
+| **Donation Alerts** | [Support Project](https://www.donationalerts.com/r/mobius_org) | Financial support |
+| **Feedback** | [Google Forms](https://docs.google.com/forms/) | Suggestions and bug reports |
