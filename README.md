@@ -1,3 +1,5 @@
+# РУССКАЯ ВЕРСИЯ
+---
 # Möbius - Универсальная платформа для цифрового творчества
 
 **Вебсайт** - https://mobius-org.ru/
@@ -62,7 +64,8 @@
 | **Обратная связь** | [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLScEEinTyMzpbWY_KdjIfyg9CuAHMhUTJnhjrOAo_My0dIXXog/viewform?usp=dialog) | Предложения и баг-репорты |
 
 ---
-
+# ENGLISH VERSION
+---
 # Möbius - Universal Digital Creativity Platform
 
 **Website** - https://mobius-org.ru/
