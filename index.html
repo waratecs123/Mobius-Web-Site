@@ -53,6 +53,7 @@ window.yaContextCb.push(() => {
     <!-- Side Panels -->
     <div class="side-panel left-panel"><div class="panel-decoration"></div></div>
     <div class="side-panel right-panel"><div class="panel-decoration"></div></div>
+
     <!-- Header -->
     <header>
         <div class="container">
@@ -63,15 +64,23 @@ window.yaContextCb.push(() => {
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#about">О программе</a></li>
+                        <li><a href="#about" data-t="about">О программе</a></li>
                         <li class="dropdown">
-                            <a href="#apps">Приложения <i class="fas fa-chevron-down"></i></a>
+                            <a href="#apps" data-t="apps">Приложения <i class="fas fa-chevron-down"></i></a>
                             <div class="dropdown-content" id="apps-dropdown"></div>
                         </li>
-                        <li><a href="#download">Скачать</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="#download" data-t="download">Скачать</a></li>
+                        <li><a href="#contacts" data-t="contacts">Контак,Контакты</a></li>
                     </ul>
                 </nav>
+
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="zh">中文</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                </div>
             </div>
         </div>
     </header>
@@ -101,16 +110,16 @@ window.yaContextCb.push(() => {
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Универсальная платформа для цифрового творчества</h1>
-                <p>Möbius объединяет все ключевые инструменты для работы с видео, аудио, графикой и мультимедиа в одном пространстве. Профессиональный инструментарий без сложных настроек и переключений между программами.</p>
+                <h1 data-t="hero-title">Универсальная платформа для цифрового творчества</h1>
+                <p data-t="hero-desc">Möbius объединяет все ключевые инструменты для работы с видео, аудио, графикой и мультимедиа в одном пространстве. Профессиональный инструментарий без сложных настроек и переключений между программами.</p>
                 <div class="hero-btns">
                     <a href="#download" class="btn btn-primary">
                         <i class="fas fa-download"></i>
-                        <span>Скачать бесплатно</span>
+                        <span data-t="download-free">Скачать бесплатно</span>
                     </a>
                     <a href="#about" class="btn btn-secondary">
                         <i class="fas fa-info-circle"></i>
-                        <span>Узнать больше</span>
+                        <span data-t="learn-more">Узнать больше</span>
                     </a>
                 </div>
             </div>
@@ -120,12 +129,12 @@ window.yaContextCb.push(() => {
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">О Möbius</h2>
+            <h2 class="section-title" data-t="about-title">О Möbius</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Möbius — это универсальная платформа, объединяющая все ключевые инструменты для цифрового творчества. Вместо десятков разрозненных приложений она предлагает единое пространство для работы с видео, аудио, графикой и мультимедиа.</p>
-                    <p>Главная сила Möbius — в бесшовной интеграции разных творческих процессов. Вы можете редактировать видео, накладывать звук, создавать графические элементы и даже генерировать QR-коды, не выходя из приложения.</p>
-                    <p>Простота и доступность — ключевые принципы Möbius. Приложение адаптировано как для профессионалов, так и для начинающих. Интуитивный интерфейс позволяет быстро освоить инструменты, а продвинутые настройки дают свободу тем, кто хочет полного контроля над процессом.</p>
+                    <p data-t="about-p1">Möbius — это универсальная платформа, объединяющая все ключевые инструменты для цифрового творчества. Вместо десятков разрозненных приложений она предлагает единое пространство для работы с видео, аудио, графикой и мультимедиа.</p>
+                    <p data-t="about-p2">Главная сила Möbius — в бесшовной интеграции разных творческих процессов. Вы можете редактировать видео, накладывать звук, создавать графические элементы и даже генерировать QR-коды, не выходя из приложения.</p>
+                    <p data-t="about-p3">Простота и доступность — ключевые принципы Möbius. Приложение адаптировано как для профессионалов, так и для начинающих. Интуитивный интерфейс позволяет быстро освоить инструменты, а продвинутые настройки дают свободу тем, кто хочет полного контроля над процессом.</p>
                 </div>
                 <div class="about-image">
                     <div class="placeholder-image">
@@ -158,22 +167,22 @@ window.yaContextCb.push(() => {
     <!-- Features Section -->
     <section class="features">
         <div class="container">
-            <h2 class="section-title">Будущие направления</h2>
+            <h2 class="section-title" data-t="future-title">Будущие направления</h2>
             <div class="features-grid">
                 <div class="feature-card" tabindex="0">
                     <div class="feature-icon"><i class="fas fa-brain"></i></div>
-                    <h3>AI-интеграция</h3>
-                    <p>Искусственный интеллект помогает автоматизировать рутинные задачи и предлагает умные решения для ваших проектов.</p>
+                    <h3 data-t="ai-title">AI-интеграция</h3>
+                    <p data-t="ai-desc">Искусственный интеллект помогает автоматизировать рутинные задачи и предлагает умные решения для ваших проектов.</p>
                 </div>
                 <div class="feature-card" tabindex="0">
                     <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
-                    <h3>Бесшовная работа</h3>
-                    <p>Все инструменты связаны между собой, позволяя легко переключаться между задачами без потери данных.</p>
+                    <h3 data-t="seamless-title">Бесшовная работа</h3>
+                    <p data-t="seamless-desc">Все инструменты связаны между собой, позволяя легко переключаться между задачами без потери данных.</p>
                 </div>
                 <div class="feature-card" tabindex="0">
                     <div class="feature-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Облачная экосистема</h3>
-                    <p>Работайте над проектами из любой точки мира и сотрудничайте с командой в реальном времени.</p>
+                    <h3 data-t="cloud-title">Облачная экосистема</h3>
+                    <p data-t="cloud-desc">Работайте над проектами из любой точки мира и сотрудничайте с командой в реальном времени.</p>
                 </div>
             </div>
         </div>
@@ -183,32 +192,33 @@ window.yaContextCb.push(() => {
     <section class="stats">
         <div class="container">
             <div class="stats-grid">
-                <div class="stat-item"><h3>500</h3><p>Пользователей по всему миру</p></div>
-                <div class="stat-item"><h3>3</h3><p>Стран с активными пользователями</p></div>
-                <div class="stat-item"><h3>99.9%</h3><p>Время безотказной работы</p></div>
-                <div class="stat-item"><h3>24/7</h3><p>Поддержка пользователей</p></div>
+                <div class="stat-item"><h3>500</h3><p data-t="users">Пользователей по всему миру</p></div>
+                <div class="stat-item"><h3>3</h3><p data-t="countries">Стран с активными пользователями</p></div>
+                <div class="stat-item"><h3>99.9%</h3><p data-t="uptime">Время безотказной работы</p></div>
+                <div class="stat-item"><h3>24/7</h3><p data-t="support">Поддержка пользователей</p></div>
             </div>
         </div>
     </section>
-<!-- Yandex.RTB R-A-17628151-11 -->
-<div id="yandex_rtb_R-A-17628151-11"></div>
-<script>
-window.yaContextCb.push(() => {
-    Ya.Context.AdvManager.render({
-        "blockId": "R-A-17628151-11",
-        "renderTo": "yandex_rtb_R-A-17628151-11"
+
+    <!-- Yandex.RTB R-A-17628151-11 -->
+    <div id="yandex_rtb_R-A-17628151-11"></div>
+    <script>
+    window.yaContextCb.push(() => {
+        Ya.Context.AdvManager.render({
+            "blockId": "R-A-17628151-11",
+            "renderTo": "yandex_rtb_R-A-17628151-11"
+        })
     })
-})
-</script>
+    </script>
 
     <!-- Apps Section -->
     <section id="apps" class="section">
         <div class="container">
-            <h2 class="section-title">Наши приложения</h2>
+            <h2 class="section-title" data-t="apps-title">Наши приложения</h2>
             <div class="apps-filter">
-                <button class="filter-btn active" data-filter="all">Все</button>
-                <button class="filter-btn" data-filter="released">Вышли</button>
-                <button class="filter-btn" data-filter="coming-soon">Скоро</button>
+                <button class="filter-btn active" data-filter="all" data-t="all">Все</button>
+                <button class="filter-btn" data-filter="released" data-t="released">Вышли</button>
+                <button class="filter-btn" data-filter="coming-soon" data-t="coming-soon">Скоро</button>
             </div>
             <div class="apps-grid" id="apps-grid"></div>
         </div>
@@ -241,42 +251,29 @@ window.yaContextCb.push(() => {
             </div>
             <div class="modal-body">
                 <div class="app-detail-info">
-
-                    <!-- Краткое описание -->
                     <div class="app-short-description">
-                        <h3>Краткое описание</h3>
+                        <h3 data-t="short-desc">Краткое описание</h3>
                         <p id="modal-short-description">—</p>
                     </div>
-
-                    <!-- Полное описание -->
                     <div class="app-full-description">
-                        <h4>Подробное описание</h4>
+                        <h4 data-t="full-desc">Подробное описание</h4>
                         <p id="modal-full-description">—</p>
                     </div>
-
-                    <!-- Возможности -->
                     <div class="app-features">
-                        <h4>Основные возможности</h4>
+                        <h4 data-t="features">Основные возможности</h4>
                         <ul id="modal-features"></ul>
                     </div>
-
-                    <!-- Платформы ПК -->
                     <div class="download-platforms">
-                        <h4>Версия для ПК</h4>
+                        <h4 data-t="pc-version">Версия для ПК</h4>
                         <div class="platform-buttons" id="pc-platform-buttons"></div>
                     </div>
-
-                    <!-- Платформы мобильные -->
                     <div class="download-platforms">
-                        <h4>Мобильная версия</h4>
+                        <h4 data-t="mobile-version">Мобильная версия</h4>
                         <div class="platform-buttons" id="mobile-platform-buttons"></div>
                     </div>
-
-                    <!-- Ad Banner Section (в карточках приложений под кнопками скачать) -->
                     <section class="ad-section">
                         <div class="container">
                             <div class="ad-banner-container">
-                                <!-- Yandex.RTB R-A-17628151-4 -->
                                 <div id="yandex_rtb_R-A-17628151-4"></div>
                                 <script>
                                 window.yaContextCb.push(() => {
@@ -289,7 +286,6 @@ window.yaContextCb.push(() => {
                             </div>
                         </div>
                     </section>
-
                 </div>
             </div>
         </div>
@@ -298,10 +294,10 @@ window.yaContextCb.push(() => {
     <!-- Download Section -->
     <section id="download" class="download-section">
         <div class="container">
-            <h2>Скачайте Möbius сейчас</h2>
-            <p>Доступно на всех популярных платформах. Начните творить без ограничений уже сегодня!</p>
+            <h2 data-t="download-now">Скачайте Möbius сейчас</h2>
+            <p data-t="download-desc">Доступно на всех популярных платформах. Начните творить без ограничений уже сегодня!</p>
             <div class="platforms-section">
-                <h3>Платформы</h3>
+                <h3 data-t="platforms">Платформы</h3>
                 <div class="platforms">
                     <div class="platform" tabindex="0"><i class="fab fa-windows"></i><span>Windows</span></div>
                     <div class="platform" tabindex="0"><i class="fab fa-apple"></i><span>macOS</span></div>
@@ -316,19 +312,19 @@ window.yaContextCb.push(() => {
     <!-- Legal Section -->
     <section class="legal-section">
         <div class="container">
-            <h2 class="section-title">Языковые версии</h2>
+            <h2 class="section-title" data-t="legal-docs">Правовые документы</h2>
             <div class="legal-buttons">
-                <a href="https://mobius.org/ru" class="legal-btn" target="_blank">
-                    <i class="fas fa-language"></i><span>Русская версия</span>
+                <a href="https://github.com/waratecs123/All_Documents_For_Mobius/tree/main/Русский" class="legal-btn" target="_blank">
+                    <span data-t="ru-version">Русская версия</span>
                 </a>
-                <a href="https://mobius.org/en" class="legal-btn" target="_blank">
-                    <i class="fas fa-language"></i><span>English Version</span>
+                <a href="https://github.com/waratecs123/All_Documents_For_Mobius/tree/main/English" class="legal-btn" target="_blank">
+                    <span data-t="en-version">English Version</span>
                 </a>
-                <a href="https://mobius.org/zh" class="legal-btn" target="_blank">
-                    <i class="fas fa-language"></i><span>中文版本</span>
+                <a href="https://github.com/waratecs123/All_Documents_For_Mobius/tree/main/中文" class="legal-btn" target="_blank">
+                    <span data-t="zh-version">中文版本</span>
                 </a>
-                <a href="https://mobius.org/es" class="legal-btn" target="_blank">
-                    <i class="fas fa-language"></i><span>Versión en Español</span>
+                <a href="https://github.com/waratecs123/All_Documents_For_Mobius/tree/main/Español" class="legal-btn" target="_blank">
+                    <span data-t="es-version">Versión en Español</span>
                 </a>
             </div>
         </div>
@@ -337,18 +333,17 @@ window.yaContextCb.push(() => {
     <!-- Contacts Section -->
     <section id="contacts" class="section">
         <div class="container">
-            <h2 class="section-title">Контакты</h2>
+            <h2 class="section-title" data-t="contacts-title">Контакты</h2>
             <div class="contacts">
                 <div class="contact-info">
-                    <h3>Свяжитесь с нами</h3>
+                    <h3 data-t="contact-us">Свяжитесь с нами</h3>
                     <div class="contact-links">
                         <a href="https://t.me/mobius_org" class="contact-link" target="_blank" rel="noopener"><span>Telegram</span></a>
                         <a href="https://youtube.com/@mobius_org?si=TcmKKKme62j2g6Wp" class="contact-link" target="_blank" rel="noopener"><span>YouTube</span></a>
                         <a href="https://www.donationalerts.com/r/mobius_org" class="contact-link" target="_blank" rel="noopener"><span>Donation Alerts</span></a>
                         <a href="https://github.com/waratecs123/Mobius-Original" class="contact-link" target="_blank" rel="noopener"><span>GitHub</span></a>
-                        <a href="#" class="contact-link" id="advertising-btn"><span>Реклама и Сотрудничество</span></a>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScEEinTyMzpbWY_KdjIfyg9CuAHMhUTJnhjrOAo_My0dIXXog/viewform?usp=dialog"
-                           class="contact-link" target="_blank" rel="noopener"><span>Обратная связь</span></a>
+                        <a href="#" class="contact-link" id="advertising-btn"><span data-t="advertising">Реклама и Сотрудничество</span></a>
+                        <a href="#" class="contact-link" id="feedback-link" target="_blank" rel="noopener"><span data-t="feedback">Обратная связь</span></a>
                     </div>
                 </div>
             </div>
@@ -379,11 +374,11 @@ window.yaContextCb.push(() => {
             <div class="footer-content">
                 <div class="footer-info">
                     <div class="footer-logo">Möbius</div>
-                    <p>Универсальная платформа для цифрового творчества</p>
+                    <p data-t="footer-desc">Универсальная платформа для цифрового творчества</p>
                 </div>
             </div>
             <div class="copyright">
-                <p>© 2025 Möbius. <span>Все права защищены.</span></p>
+                <p>© 2025 Möbius. <span data-t="rights">Все права защищены.</span></p>
             </div>
         </div>
     </footer>
@@ -391,16 +386,16 @@ window.yaContextCb.push(() => {
     <!-- Advertising Modal -->
     <div id="advertising-modal" class="modal">
         <div class="modal-content">
-            <div class="modal-header"><h2>Реклама и Сотрудничество</h2><button class="close-btn" aria-label="Close modal">×</button></div>
+            <div class="modal-header"><h2 data-t="advertising-title">Реклама и Сотрудничество</h2><button class="close-btn" aria-label="Close modal">×</button></div>
             <div class="modal-body">
                 <div class="legal-content">
-                    <p>Для вопросов, связанных с рекламой и сотрудничеством, пожалуйста, свяжитесь с нами через Telegram:</p>
+                    <p data-t="advertising-text">Для вопросов, связанных с рекламой и сотрудничеством, пожалуйста, свяжитесь с нами через Telegram:</p>
                     <div class="contact-link-container">
                         <a href="https://t.me/@debil_polneyshii_debil" class="contact-link large" target="_blank" rel="noopener">
                             <i class="fab fa-telegram"></i><span>@debil_polneyshii_debil</span>
                         </a>
                     </div>
-                    <p>Мы открыты к различным формам сотрудничества, включая рекламные интеграции, партнерские программы и совместные проекты.</p>
+                    <p data-t="advertising-text2">Мы открыты к различным формам сотрудничества, включая рекламные интеграции, партнерские программы и совместные проекты.</p>
                 </div>
             </div>
         </div>
@@ -410,208 +405,349 @@ window.yaContextCb.push(() => {
     <div id="ad-block-detection" style="display:none;">
         <div class="ad-banner" style="width:1px;height:1px;position:absolute;left:-9999px;">&nbsp;</div>
     </div>
+
     <script>
+        // ==================== ПЕРЕВОДЫ ОСНОВНОГО КОНТЕНТА ====================
+        const translations = {
+            ru: {
+                "about": "О программе",
+                "apps": "Приложения",
+                "download": "Скачать",
+                "contacts": "Контакты",
+                "hero-title": "Универсальная платформа для цифрового творчества",
+                "hero-desc": "Möbius объединяет все ключевые инструменты для работы с видео, аудио, графикой и мультимедиа в одном пространстве. Профессиональный инструментарий без сложных настроек и переключений между программами.",
+                "download-free": "Скачать бесплатно",
+                "learn-more": "Узнать больше",
+                "about-title": "О Möbius",
+                "about-p1": "Möbius — это универсальная платформа, объединяющая все ключевые инструменты для цифрового творчества. Вместо десятков разрозненных приложений она предлагает единое пространство для работы с видео, аудио, графикой и мультимедиа.",
+                "about-p2": "Главная сила Möbius — в бесшовной интеграции разных творческих процессов. Вы можете редактировать видео, накладывать звук, создавать графические элементы и даже генерировать QR-коды, не выходя из приложения.",
+                "about-p3": "Простота и доступность — ключевые принципы Möbius. Приложение адаптировано как для профессионалов, так и для начинающих. Интуитивный интерфейс позволяет быстро освоить инструменты, а продвинутые настройки дают свободу тем, кто хочет полного контроля над процессом.",
+                "future-title": "Будущие направления",
+                "ai-title": "AI-интеграция",
+                "ai-desc": "Искусственный интеллект помогает автоматизировать рутинные задачи и предлагает умные решения для ваших проектов.",
+                "seamless-title": "Бесшовная работа",
+                "seamless-desc": "Все инструменты связаны между собой, позволяя легко переключаться между задачами без потери данных.",
+                "cloud-title": "Облачная экосистема",
+                "cloud-desc": "Работайте над проектами из любой точки мира и сотрудничайте с командой в реальном времени.",
+                "users": "Пользователей по всему миру",
+                "countries": "Стран с активными пользователями",
+                "uptime": "Время безотказной работы",
+                "support": "Поддержка пользователей",
+                "apps-title": "Наши приложения",
+                "all": "Все",
+                "released": "Вышли",
+                "coming-soon": "Скоро",
+                "short-desc": "Краткое описание",
+                "full-desc": "Подробное описание",
+                "features": "Основные возможности",
+                "pc-version": "Версия для ПК",
+                "mobile-version": "Мобильная версия",
+                "download-now": "Скачайте Möbius сейчас",
+                "download-desc": "Доступно на всех популярных платформах. Начните творить без ограничений уже сегодня!",
+                "platforms": "Платформы",
+                "legal-docs": "Правовые документы",
+                "ru-version": "Русская версия",
+                "en-version": "English Version",
+                "zh-version": "中文版本",
+                "es-version": "Versión en Español",
+                "contacts-title": "Контакты",
+                "contact-us": "Свяжитесь с нами",
+                "advertising": "Реклама и Сотрудничество",
+                "feedback": "Обратная связь",
+                "footer-desc": "Универсальная платформа для цифрового творчества",
+                "rights": "Все права защищены.",
+                "advertising-title": "Реклама и Сотрудничество",
+                "advertising-text": "Для вопросов, связанных с рекламой и сотрудничеством, пожалуйста, свяжитесь с нами через Telegram:",
+                "advertising-text2": "Мы открыты к различным формам сотрудничества, включая рекламные интеграции, партнерские программы и совместные проекты."
+            },
+            en: {
+                "about": "About",
+                "apps": "Apps",
+                "download": "Download",
+                "contacts": "Contacts",
+                "hero-title": "Universal Platform for Digital Creativity",
+                "hero-desc": "Möbius combines all key tools for video, audio, graphics, and multimedia in one space. Professional toolkit without complex setups or app switching.",
+                "download-free": "Download Free",
+                "learn-more": "Learn More",
+                "about-title": "About Möbius",
+                "about-p1": "Möbius is a universal platform that unites all key digital creativity tools. Instead of dozens of separate apps, it offers a unified space for video, audio, graphics, and multimedia.",
+                "about-p2": "Möbius's main strength is seamless integration of creative processes. Edit video, overlay audio, create graphics, and generate QR codes — all within one app.",
+                "about-p3": "Simplicity and accessibility are core principles. The app suits both professionals and beginners. Intuitive interface allows quick mastery, while advanced settings offer full control.",
+                "future-title": "Future Directions",
+                "ai-title": "AI Integration",
+                "ai-desc": "Artificial intelligence automates routine tasks and offers smart solutions for your projects.",
+                "seamless-title": "Seamless Workflow",
+                "seamless-desc": "All tools are interconnected, allowing easy task switching without data loss.",
+                "cloud-title": "Cloud Ecosystem",
+                "cloud-desc": "Work on projects from anywhere and collaborate with your team in real time.",
+                "users": "Users Worldwide",
+                "countries": "Countries with Active Users",
+                "uptime": "Uptime",
+                "support": "User Support",
+                "apps-title": "Our Apps",
+                "all": "All",
+                "released": "Released",
+                "coming-soon": "Coming Soon",
+                "short-desc": "Short Description",
+                "full-desc": "Detailed Description",
+                "features": "Key Features",
+                "pc-version": "Desktop Version",
+                "mobile-version": "Mobile Version",
+                "download-now": "Download Möbius Now",
+                "download-desc": "Available on all popular platforms. Start creating without limits today!",
+                "platforms": "Platforms",
+                "legal-docs": "Legal Documents",
+                "ru-version": "Russian Version",
+                "en-version": "English Version",
+                "zh-version": "中文版本",
+                "es-version": "Versión en Español",
+                "contacts-title": "Contacts",
+                "contact-us": "Get in Touch",
+                "advertising": "Advertising & Partnership",
+                "feedback": "Feedback",
+                "footer-desc": "Universal Platform for Digital Creativity",
+                "rights": "All rights reserved.",
+                "advertising-title": "Advertising & Partnership",
+                "advertising-text": "For advertising and partnership inquiries, please contact us via Telegram:",
+                "advertising-text2": "We are open to various forms of cooperation, including ad integrations, affiliate programs, and joint projects."
+            },
+            zh: {
+                "about": "关于",
+                "apps": "应用",
+                "download": "下载",
+                "contacts": "联系",
+                "hero-title": "数字创意通用平台",
+                "hero-desc": "Möbius 将视频、音频、图形和多媒体的所有关键工具整合在一个空间。无需复杂设置或切换应用程序的专业工具包。",
+                "download-free": "免费下载",
+                "learn-more": "了解更多",
+                "about-title": "关于 Möbius",
+                "about-p1": "Möbius 是一个整合所有数字创意关键工具的通用平台。它提供了一个统一的空间来处理视频、音频、图形和多媒体，而不是数十个分散的应用程序。",
+                "about-p2": "Möbius 的主要优势在于不同创意流程的无缝整合。您可以在一个应用内编辑视频、叠加音频、创建图形元素甚至生成二维码。",
+                "about-p3": "简单和易用性是 Möbius 的核心原则。该应用适合专业人士和初学者。直观的界面让您快速掌握工具，而高级设置则为追求完全控制的用户提供自由。",
+                "future-title": "未来方向",
+                "ai-title": "AI 集成",
+                "ai-desc": "人工智能帮助自动化常规任务并为您的项目提供智能解决方案。",
+                "seamless-title": "无缝工作流",
+                "seamless-desc": "所有工具相互连接，允许轻松切换任务而不会丢失数据。",
+                "cloud-title": "云生态系统",
+                "cloud-desc": "从世界任何地方处理项目并与团队实时协作。",
+                "users": "全球用户",
+                "countries": "活跃用户国家",
+                "uptime": "正常运行时间",
+                "support": "用户支持",
+                "apps-title": "我们的应用",
+                "all": "全部",
+                "released": "已发布",
+                "coming-soon": "即将推出",
+                "short-desc": "简要描述",
+                "full-desc": "详细描述",
+                "features": "主要功能",
+                "pc-version": "桌面版",
+                "mobile-version": "移动版",
+                "download-now": "立即下载 Möbius",
+                "download-desc": "适用于所有主流平台。今天就开始无限制创作！",
+                "platforms": "平台",
+                "legal-docs": "法律文件",
+                "ru-version": "Русская версия",
+                "en-version": "English Version",
+                "zh-version": "中文版本",
+                "es-version": "Versión en Español",
+                "contacts-title": "联系方式",
+                "contact-us": "联系我们",
+                "advertising": "广告与合作",
+                "feedback": "反馈",
+                "footer-desc": "数字创意通用平台",
+                "rights": "保留所有权利。",
+                "advertising-title": "广告与合作",
+                "advertising-text": "有关广告和合作的问题，请通过 Telegram 联系我们：",
+                "advertising-text2": "我们欢迎各种形式的合作，包括广告整合、联盟计划和联合项目。"
+            },
+            es: {
+                "about": "Acerca de",
+                "apps": "Aplicaciones",
+                "download": "Descargar",
+                "contacts": "Contactos",
+                "hero-title": "Plataforma Universal para la Creatividad Digital",
+                "hero-desc": "Möbius combina todas las herramientas clave para video, audio, gráficos y multimedia en un solo espacio. Herramientas profesionales sin configuraciones complejas ni cambios entre aplicaciones.",
+                "download-free": "Descargar Gratis",
+                "learn-more": "Saber Más",
+                "about-title": "Acerca de Möbius",
+                "about-p1": "Möbius es una plataforma universal que une todas las herramientas clave para la creatividad digital. En lugar de docenas de aplicaciones separadas, ofrece un espacio unificado para video, audio, gráficos y multimedia.",
+                "about-p2": "La principal fortaleza de Möbius es la integración fluida de procesos creativos. Edita video, superpone audio, crea elementos gráficos y genera códigos QR sin salir de la aplicación.",
+                "about-p3": "Simplicidad y accesibilidad son principios clave. La aplicación está adaptada tanto para profesionales como para principiantes. La interfaz intuitiva permite dominar las herramientas rápidamente, mientras que los ajustes avanzados ofrecen libertad total.",
+                "future-title": "Direcciones Futuras",
+                "ai-title": "Integración de IA",
+                "ai-desc": "La inteligencia artificial automatiza tareas rutinarias y ofrece soluciones inteligentes para tus proyectos.",
+                "seamless-title": "Flujo de Trabajo Fluido",
+                "seamless-desc": "Todas las herramientas están interconectadas, permitiendo cambiar entre tareas fácilmente sin pérdida de datos.",
+                "cloud-title": "Ecosistema en la Nube",
+                "cloud-desc": "Trabaja en proyectos desde cualquier lugar y colabora con tu equipo en tiempo real.",
+                "users": "Usuarios en Todo el Mundo",
+                "countries": "Países con Usuarios Activos",
+                "uptime": "Tiempo de Actividad",
+                "support": "Soporte al Usuario",
+                "apps-title": "Nuestras Aplicaciones",
+                "all": "Todas",
+                "released": "Lanzadas",
+                "coming-soon": "Próximamente",
+                "short-desc": "Descripción Corta",
+                "full-desc": "Descripción Detallada",
+                "features": "Características Principales",
+                "pc-version": "Versión para PC",
+                "mobile-version": "Versión Móvil",
+                "download-now": "Descarga Möbius Ahora",
+                "download-desc": "Disponible en todas las plataformas populares. ¡Comienza a crear sin límites hoy!",
+                "platforms": "Plataformas",
+                "legal-docs": "Documentos Legales",
+                "ru-version": "Русская версия",
+                "en-version": "English Version",
+                "zh-version": "中文版本",
+                "es-version": "Versión en Español",
+                "contacts-title": "Contactos",
+                "contact-us": "Contáctanos",
+                "advertising": "Publicidad y Colaboración",
+                "feedback": "Retroalimentación",
+                "footer-desc": "Plataforma Universal para la Creatividad Digital",
+                "rights": "Todos los derechos reservados.",
+                "advertising-title": "Publicidad y Colaboración",
+                "advertising-text": "Para consultas sobre publicidad y colaboración, por favor contáctanos a través de Telegram:",
+                "advertising-text2": "Estamos abiertos a diversas formas de cooperación, incluyendo integraciones publicitarias, programas de afiliados y proyectos conjuntos."
+            }
+        };
+
+        // Ссылки на формы обратной связи
+        const feedbackLinks = {
+            ru: "https://docs.google.com/forms/d/e/1FAIpQLScEEinTyMzpbWY_KdjIfyg9CuAHMhUTJnhjrOAo_My0dIXXog/viewform?usp=dialog",
+            en: "https://docs.google.com/forms/d/e/1FAIpQLScEEinTyMzpbWY_KdjIfyg9CuAHMhUTJnhjrOAo_My0dIXXog/viewform?usp=dialog",
+            zh: "https://docs.google.com/forms/d/e/1FAIpQLScEEinTyMzpbWY_KdjIfyg9CuAHMhUTJnhjrOAo_My0dIXXog/viewform?usp=dialog",
+            es: "https://docs.google.com/forms/d/e/1FAIpQLScEEinTyMzpbWY_KdjIfyg9CuAHMhUTJnhjrOAo_My0dIXXog/viewform?usp=dialog"
+        };
+
+        // Переводы приложений
+        const appTranslations = {
+            ru: {
+                "Chopin Keys": { short: "DAW с AI-ассистентом", full: "Мощная цифровая звуковая рабочая станция с AI-ассистентом для создания музыки. Поддержка VST-плагинов, многодорожечной записи и библиотеки сэмплов.", features: ["AI-ассистент для композиции","Многодорожечная запись","Библиотека сэмплов и лупов","VST-плагины и эффекты","Экспорт в различные форматы"] },
+                "Fibonacci Scan": { short: "Стильные QR-коды с дизайном", full: "Генератор и сканер QR-кодов с кастомизацией дизайна и аналитикой. Поддержка динамических кодов и пакетного создания.", features: ["Кастомизация дизайна QR-кодов","Аналитика сканирований","Динамические QR-коды","Пакетное создание","Экспорт в SVG и PNG"] },
+                "Gagarin Bridge": { short: "Конвертер файлов", full: "Универсальный конвертер для медиафайлов, документов и изображений. Пакетная обработка и поддержка 100+ форматов.", features: ["Пакетная обработка файлов","Поддержка 100+ форматов","Автоматизация конвертации","Настройка качества вывода","Интеграция с облачными хранилищами"] },
+                "Jobs Archive": { short: "Загрузчик видео до 8K", full: "Инструмент для скачивания видео с популярных платформ. Поддержка качества до 8K и пакетной загрузки плейлистов.", features: ["Загрузка видео до 8K качества","Поддержка всех популярных платформ","Пакетная загрузка плейлистов","Извлечение аудиодорожек","Встроенный менеджер загрузок"] },
+                "Lumière Cut": { short: "Профессиональный видеоредактор", full: "Мощный видеоредактор с многодорожечным монтажом, эффектами и цветокоррекцией. Рендеринг в 4K и 8K.", features: ["Многодорожечный монтаж","Эффекты и переходы","Цветокоррекция и грейдинг","Кейфрейминг и анимация","Рендеринг в 4K и 8K"] },
+                "Marilyn Tone": { short: "Синтез речи и голосовые персонажи", full: "Преобразование текста в речь с голосовыми персонажами. Настройка эмоций и интонации для естественного звучания.", features: ["Реалистичный синтез речи","Библиотека голосовых персонажей","Настройка эмоций и интонации","Поддержка множества языков","Экспорт в аудиоформаты"] },
+                "Newton Flow": { short: "Создание битов на тачпаде", full: "Интерактивный тайпэд для создания битов и сэмплов. Интеграция с DAW и поддержка MIDI-выхода.", features: ["Интуитивный тачпад-интерфейс","Библиотека звуков и сэмплов","Редактор паттернов","Эффекты и обработка в реальном времени","Экспорт в MIDI и аудио"] },
+                "Picasso Art": { short: "Графический редактор с AI", full: "Профессиональный графический редактор с AI-инструментами. Поддержка слоев, масок и графических планшетов.", features: ["AI-инструменты для рисования","Слои и маски","Фильтры и эффекты","Поддержка графических планшетов","Экспорт в PSD, PNG, SVG"] },
+                "Michael Byte": { short: "3D-текст и типографика", full: "Инструмент для работы с 3D-текстом и типографикой. Создание стильных надписей с материалами и освещением.", features: ["3D-моделирование текста","Материалы и освещение","Анимация и трансформации","Предустановки стилей","Экспорт в PNG и JPG"] },
+                "Tarantino Catch": { short: "Запись экрана и веб-камеры", full: "Запись видео с экрана и веб-камеры одновременно. Настройка качества и синхронизация потоков.", features: ["Запись экрана и веб-камеры","Настройка качества и FPS","Запись системного звука","Редактор записи","Экспорт в популярные форматы"] },
+                "Picasso Art Lite": { short: "Быстрая обработка фото", full: "Облегченная версия редактора для мгновенной обработки изображений. Готовые пресеты и пакетная обработка.", features: ["Быстрая обработка фотографий","Готовые пресеты и фильтры","Коррекция цвета и света","Ретушь портретов","Пакетная обработка"] },
+                "Mondrian Grid": { short: "Анализ цвета и палитры", full: "Профессиональный инструмент для работы с цветом. Анализ схем, создание палитр и проверка контраста.", features: ["Анализ цветовых схем","Создание палитр","Контраст и доступность","Экспорт палитр","Интеграция с дизайн-системами"] },
+                "William Wave": { short: "Аудио-редактор", full: "Профессиональный аудио-редактор с современным интерфейсом. Эффекты, плагины и спектральный анализ.", features: ["Современный интерфейс","Многодорожечное редактирование","Эффекты и плагины","Спектральный анализ","Экспорт в различные форматы"] },
+                "Kailed AI": { short: "Генератор узоров и текстур", full: "Генератор абстрактных узоров и текстур с AI-оптимизацией. Создание уникальных паттернов и орнаментов.", features: ["Генерация абстрактных узоров и текстур","AI-оптимизация визуальной сложности","Пакетная обработка и экспорт","Комбинирование нескольких паттернов","Расширенные инструменты пост-обработки"] },
+                "Mobius Proxy": { short: "Менеджер прокси-соединений", full: "Мощный менеджер прокси-соединений с AI-оптимизацией. Поддержка различных протоколов и цепочек прокси.", features: ["AI-оптимизация скорости подключения","Поддержка HTTP/HTTPS и SOCKS","Объединение прокси в цепочки","Массовая проверка работоспособности","Экспорт результатов в JSON/CSV"] }
+            },
+            en: {
+                "Chopin Keys": { short: "DAW with AI Assistant", full: "Powerful digital audio workstation with AI assistant for music creation. Supports VST plugins, multi-track recording, and sample library.", features: ["AI composition assistant","Multi-track recording","Sample and loop library","VST plugins and effects","Export to various formats"] },
+                "Fibonacci Scan": { short: "Stylish QR Codes with Design", full: "QR code generator and scanner with design customization and analytics. Supports dynamic codes and batch creation.", features: ["QR code design customization","Scan analytics","Dynamic QR codes","Batch creation","Export to SVG and PNG"] },
+                "Gagarin Bridge": { short: "File Converter", full: "Universal converter for media files, documents, and images. Batch processing and support for 100+ formats.", features: ["Batch file processing","100+ format support","Conversion automation","Output quality settings","Cloud storage integration"] },
+                "Jobs Archive": { short: "Video Downloader up to 8K", full: "Tool for downloading videos from popular platforms. Supports up to 8K quality and playlist batch download.", features: ["Download up to 8K quality","All popular platforms","Playlist batch download","Audio track extraction","Built-in download manager"] },
+                "Lumière Cut": { short: "Professional Video Editor", full: "Powerful video editor with multi-track editing, effects, and color grading. Renders in 4K and 8K.", features: ["Multi-track editing","Effects and transitions","Color correction and grading","Keyframing and animation","4K and 8K rendering"] },
+                "Marilyn Tone": { short: "Speech Synthesis & Voice Characters", full: "Text-to-speech with voice characters. Emotion and intonation settings for natural sound.", features: ["Realistic speech synthesis","Voice character library","Emotion and intonation control","Multi-language support","Audio format export"] },
+                "Newton Flow": { short: "Beat Making on Touchpad", full: "Interactive touchpad for creating beats and samples. DAW integration and MIDI output support.", features: ["Intuitive touchpad interface","Sound and sample library","Pattern editor","Real-time effects processing","MIDI and audio export"] },
+                "Picasso Art": { short: "Graphics Editor with AI", full: "Professional graphics editor with AI tools. Supports layers, masks, and graphics tablets.", features: ["AI drawing tools","Layers and masks","Filters and effects","Graphics tablet support","Export to PSD, PNG, SVG"] },
+                "Michael Byte": { short: "3D Text and Typography", full: "Tool for 3D text and typography. Create stylish captions with materials and lighting.", features: ["3D text modeling","Materials and lighting","Animation and transformations","Style presets","Export to PNG and JPG"] },
+                "Tarantino Catch": { short: "Screen & Webcam Recording", full: "Record screen and webcam simultaneously. Quality settings and stream sync.", features: ["Screen and webcam recording","Quality and FPS settings","System audio recording","Recording editor","Export to popular formats"] },
+                "Picasso Art Lite": { short: "Fast Photo Processing", full: "Lightweight editor for instant image processing. Ready presets and batch processing.", features: ["Fast photo processing","Presets and filters","Color and light correction","Portrait retouching","Batch processing"] },
+                "Mondrian Grid": { short: "Color and Palette Analysis", full: "Professional tool for color work. Scheme analysis, palette creation, and contrast checking.", features: ["Color scheme analysis","Palette creation","Contrast and accessibility","Palette export","Design system integration"] },
+                "William Wave": { short: "Audio Editor", full: "Professional audio editor with modern interface. Effects, plugins, and spectral analysis.", features: ["Modern interface","Multi-track editing","Effects and plugins","Spectral analysis","Export to various formats"] },
+                "Kailed AI": { short: "Pattern and Texture Generator", full: "Generator of abstract patterns and textures with AI optimization. Create unique patterns and ornaments.", features: ["Abstract pattern and texture generation","AI visual complexity optimization","Batch processing and export","Multiple pattern combination","Advanced post-processing tools"] },
+                "Mobius Proxy": { short: "Proxy Connection Manager", full: "Powerful proxy connection manager with AI optimization. Supports various protocols and proxy chains.", features: ["AI connection speed optimization","HTTP/HTTPS and SOCKS support","Proxy chaining","Mass proxy validation","Export results to JSON/CSV"] }
+            },
+            zh: {
+                "Chopin Keys": { short: "带AI助手的DAW", full: "强大的数字音频工作站，配备AI助手用于音乐创作。支持VST插件、多轨录音和样本库。", features: ["AI作曲助手","多轨录音","样本和循环库","VST插件和效果","导出为多种格式"] },
+                "Fibonacci Scan": { short: "时尚设计的二维码", full: "二维码生成器和扫描器，支持设计自定义和分析。支持动态码和批量创建。", features: ["二维码设计自定义","扫描分析","动态二维码","批量创建","导出为SVG和PNG"] },
+                "Gagarin Bridge": { short: "文件转换器", full: "媒体文件、文档和图像的通用转换器。批量处理，支持100+格式。", features: ["批量文件处理","支持100+格式","转换自动化","输出质量设置","云存储集成"] },
+                "Jobs Archive": { short: "最高8K视频下载器", full: "从流行平台下载视频的工具。支持最高8K质量和播放列表批量下载。", features: ["最高8K质量下载","所有流行平台","播放列表批量下载","音频轨道提取","内置下载管理器"] },
+                "Lumière Cut": { short: "专业视频编辑器", full: "强大的视频编辑器，支持多轨编辑、效果和色彩校正。支持4K和8K渲染。", features: ["多轨编辑","效果和过渡","色彩校正和调色","关键帧和动画","4K和8K渲染"] },
+                "Marilyn Tone": { short: "语音合成与角色", full: "文本转语音，带语音角色。支持情感和语调设置，实现自然发音。", features: ["真实语音合成","语音角色库","情感和语调控制","多语言支持","音频格式导出"] },
+                "Newton Flow": { short: "触摸板制作节拍", full: "用于创建节拍和样本的交互式触摸板。与DAW集成，支持MIDI输出。", features: ["直观触摸板界面","声音和样本库","模式编辑器","实时效果处理","MIDI和音频导出"] },
+                "Picasso Art": { short: "带AI的图形编辑器", full: "专业图形编辑器，配备AI工具。支持图层、蒙版和图形平板。", features: ["AI绘图工具","图层和蒙版","滤镜和效果","图形平板支持","导出为PSD、PNG、SVG"] },
+                "Michael Byte": { short: "3D文本和排版", full: "用于3D文本和排版的工具。使用材质和照明创建时尚标题。", features: ["3D文本建模","材质和照明","动画和变换","样式预设","导出为PNG和JPG"] },
+                "Tarantino Catch": { short: "屏幕与摄像头录制", full: "同时录制屏幕和摄像头。支持质量设置和流同步。", features: ["屏幕和摄像头录制","质量和FPS设置","系统音频录制","录制编辑器","导出为流行格式"] },
+                "Picasso Art Lite": { short: "快速照片处理", full: "用于即时图像处理的轻量级编辑器。预设和批量处理。", features: ["快速照片处理","预设和滤镜","色彩和光线校正","人像修饰","批量处理"] },
+                "Mondrian Grid": { short: "颜色与调色板分析", full: "专业色彩工作工具。方案分析、调色板创建和对比度检查。", features: ["配色方案分析","调色板创建","对比度和可访问性","调色板导出","设计系统集成"] },
+                "William Wave": { short: "音频编辑器", full: "专业音频编辑器，现代界面。支持效果、插件和频谱分析。", features: ["现代界面","多轨编辑","效果和插件","频谱分析","导出为多种格式"] },
+                "Kailed AI": { short: "图案和纹理生成器", full: "带AI优化的抽象图案和纹理生成器。创建独特图案和装饰。", features: ["抽象图案和纹理生成","AI视觉复杂度优化","批量处理和导出","多个图案组合","高级后期处理工具"] },
+                "Mobius Proxy": { short: "代理连接管理器", full: "强大的代理连接管理器，带AI优化。支持多种协议和代理链。", features: ["AI连接速度优化","HTTP/HTTPS和SOCKS支持","代理链","大规模代理验证","导出结果为JSON/CSV"] }
+            },
+            es: {
+                "Chopin Keys": { short: "DAW con Asistente IA", full: "Estación de trabajo de audio digital potente con asistente de IA para creación musical. Soporta plugins VST, grabación multipista y biblioteca de muestras.", features: ["Asistente de composición IA","Grabación multipista","Biblioteca de muestras y loops","Plugins VST y efectos","Exportar a varios formatos"] },
+                "Fibonacci Scan": { short: "Códigos QR con Diseño", full: "Generador y escáner de códigos QR con personalización de diseño y analítica. Soporta códigos dinámicos y creación por lotes.", features: ["Personalización de diseño QR","Analítica de escaneos","Códigos QR dinámicos","Creación por lotes","Exportar a SVG y PNG"] },
+                "Gagarin Bridge": { short: "Convertidor de Archivos", full: "Convertidor universal para archivos multimedia, documentos e imágenes. Procesamiento por lotes y soporte para más de 100 formatos.", features: ["Procesamiento por lotes","Soporte para +100 formatos","Automatización de conversión","Ajustes de calidad de salida","Integración con almacenamiento en la nube"] },
+                "Jobs Archive": { short: "Descargador de Video hasta 8K", full: "Herramienta para descargar videos de plataformas populares. Soporta calidad hasta 8K y descarga por lotes de listas de reproducción.", features: ["Descarga hasta 8K","Todas las plataformas populares","Descarga por lotes de listas","Extracción de pista de audio","Gestor de descargas integrado"] },
+                "Lumière Cut": { short: "Editor de Video Profesional", full: "Editor de video potente con edición multipista, efectos y corrección de color. Renderiza en 4K y 8K.", features: ["Edición multipista","Efectos y transiciones","Corrección y gradación de color","Keyframing y animación","Renderizado en 4K y 8K"] },
+                "Marilyn Tone": { short: "Síntesis de Voz y Personajes", full: "Conversión de texto a voz con personajes de voz. Ajuste de emociones e entonación para sonido natural.", features: ["Síntesis de voz realista","Biblioteca de personajes de voz","Control de emociones y entonación","Soporte multiidioma","Exportar a formatos de audio"] },
+                "Newton Flow": { short: "Creación de Beats en Touchpad", full: "Touchpad interactivo para crear beats y muestras. Integración con DAW y soporte de salida MIDI.", features: ["Interfaz intuitiva de touchpad","Biblioteca de sonidos y muestras","Editor de patrones","Efectos en tiempo real","Exportar a MIDI y audio"] },
+                "Picasso Art": { short: "Editor Gráfico con IA", full: "Editor gráfico profesional con herramientas de IA. Soporta capas, máscaras y tabletas gráficas.", features: ["Herramientas de dibujo con IA","Capas y máscaras","Filtros y efectos","Soporte para tabletas gráficas","Exportar a PSD, PNG, SVG"] },
+                "Michael Byte": { short: "Texto 3D y Tipografía", full: "Herramienta para texto 3D y tipografía. Crea títulos estilizados con materiales e iluminación.", features: ["Modelado de texto 3D","Materiales e iluminación","Animación y transformaciones","Preajustes de estilo","Exportar a PNG y JPG"] },
+                "Tarantino Catch": { short: "Grabación de Pantalla y Webcam", full: "Graba pantalla y webcam simultáneamente. Ajustes de calidad y sincronización de flujos.", features: ["Grabación de pantalla y webcam","Ajustes de calidad y FPS","Grabación de audio del sistema","Editor de grabación","Exportar a formatos populares"] },
+                "Picasso Art Lite": { short: "Procesamiento Rápido de Fotos", full: "Versión ligera del editor para procesamiento instantáneo de imágenes. Preajustes listos y procesamiento por lotes.", features: ["Procesamiento rápido de fotos","Preajustes y filtros","Corrección de color y luz","Retoque de retratos","Procesamiento por lotes"] },
+                "Mondrian Grid": { short: "Análisis de Color y Paleta", full: "Herramienta profesional para trabajo con color. Análisis de esquemas, creación de paletas y verificación de contraste.", features: ["Análisis de esquemas de color","Creación de paletas","Contraste y accesibilidad","Exportación de paletas","Integración con sistemas de diseño"] },
+                "William Wave": { short: "Editor de Audio", full: "Editor de audio profesional con interfaz moderna. Efectos, plugins y análisis espectral.", features: ["Interfaz moderna","Edición multipista","Efectos y plugins","Análisis espectral","Exportar a varios formatos"] },
+                "Kailed AI": { short: "Generador de Patrones y Texturas", full: "Generador de patrones abstractos y texturas con optimización de IA. Crea patrones y ornamentos únicos.", features: ["Generación de patrones y texturas abstractas","Optimización de complejidad visual con IA","Procesamiento y exportación por lotes","Combinación de múltiples patrones","Herramientas avanzadas de posprocesamiento"] },
+                "Mobius Proxy": { short: "Gestor de Conexiones Proxy", full: "Potente gestor de conexiones proxy con optimización de IA. Soporta varios protocolos y cadenas de proxy.", features: ["Optimización de velocidad con IA","Soporte HTTP/HTTPS y SOCKS","Cadenas de proxy","Validación masiva de proxies","Exportar resultados a JSON/CSV"] }
+            }
+        };
+
+        let currentLang = 'ru';
+        let currentFilter = 'all';
+
+        // Функция перевода
+        function translate(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+
+            document.querySelectorAll('[data-t]').forEach(el => {
+                const key = el.getAttribute('data-t');
+                if (translations[lang][key]) {
+                    if (el.tagName === 'BUTTON') {
+                        el.textContent = translations[lang][key];
+                    } else {
+                        el.innerHTML = translations[lang][key];
+                    }
+                }
+            });
+
+            // Обновление ссылки обратной связи
+            const feedbackLink = document.getElementById('feedback-link');
+            if (feedbackLink) {
+                feedbackLink.href = feedbackLinks[lang];
+            }
+
+            // Активная кнопка
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+
+            renderAppsGrid();
+            renderAppsDropdown();
+        }
+
         // ==================== ДАННЫЕ ПРИЛОЖЕНИЙ ====================
         const apps = [
-            {
-                id: 1,
-                name: "Chopin Keys",
-                shortDescription: "DAW с AI-ассистентом",
-                fullDescription: "Chopin Keys – это мощное и интуитивно понятное приложение для создания музыки на ПК, вдохновлённое функционалом FL Studio и GarageBand. Оно предлагает полноценную цифровую звуковую рабочую станцию (DAW) с поддержкой многодорожечной записи, MIDI-редактирования и обширной библиотекой виртуальных инструментов. Пользователи могут работать с синтезаторами, семплами, аудиоэффектами и автоматизацией параметров, что делает Chopin Keys отличным выбором как для начинающих, так и для профессиональных продюсеров. Программа выделяется гибкостью: есть готовые лупы и пресеты для быстрого старта, а также продвинутые инструменты для тонкой настройки звука. Chopin Keys поддерживает VST-плагины, встроенный AI-ассистент помогает в аранжировке, подборе аккордов и генерации мелодий. Приложение доступно, работает на слабых компьютерах, имеет настраиваемый интерфейс, бесплатную и платные версии, а также облачную синхронизацию проектов для работы с разных устройств.",
-                status: "coming-soon",
-                features: [
-                    "AI-ассистент для композиции",
-                    "Многодорожечная запись",
-                    "Библиотека сэмплов и лупов",
-                    "VST-плагины и эффекты",
-                    "Экспорт в различные форматы"
-                ]
-            },
-            {
-                id: 2,
-                name: "Fibonacci Scan",
-                shortDescription: "Стильные QR-коды с дизайном и аналитикой",
-                fullDescription: "Fibonacci Scan – это мощный генератор и сканер QR-кодов для ПК, который позволяет создавать как простые статические коды, так и динамические QR-ссылки с отслеживанием статистики, редактируемым содержимым и защитой паролем. Поддерживаются все популярные форматы: URL, vCard, WiFi-авторизация, криптоплатежи, а встроенный редактор позволяет кастомизировать дизайн без потери читаемости. Программа выделяется уникальными функциями: AI-оптимизация кодов для сканирования при повреждении, пакетная генерация, аналитика с географией сканирований, шифрование данных, сроки действия кодов. Также поддерживает редкие форматы вроде Aztec Code и работает оффлайн. Доступна бесплатная версия, а платная подписка или разовая покупка открывают премиум-шаблоны, API-интеграцию и удалённое управление. Приложение оптимизировано для слабых ПК, поддерживает 24 языка и специальный режим для людей с ограниченными возможностями.",
-                status: "coming-soon",
-                features: [
-                    "Кастомизация дизайна QR-кодов",
-                    "Аналитика сканирований",
-                    "Динамические QR-коды",
-                    "Пакетное создание",
-                    "Экспорт в SVG и PNG"
-                ]
-            },
-            {
-                id: 3,
-                name: "Gagarin Bridge",
-                shortDescription: "Конвертер файлов (пакетная обработка)",
-                fullDescription: "Gagarin Bridge – это универсальный конвертер файлов для ПК, который быстро преобразует медиафайлы, документы, изображения и архивы между сотнями форматов, включая видео (MP4, AVI, MKV), аудио (MP3, FLAC, WAV), PDF, DOCX, JPG, PNG и специализированные форматы вроде PSD или CAD. Он отличается высокой скоростью обработки благодаря многопоточным технологиям и аппаратному ускорению. Помимо базового преобразования, программа предлагает расширенные настройки: сжатие без потерь, изменение разрешения видео, извлечение аудиодорожек, объединение файлов и пакетную обработку с возможностью тонкой настройки параметров выходного файла и предпросмотром результата. Gagarin Bridge сочетает простой интерфейс для новичков с продвинутыми функциями для профессионалов, работает по разовой лицензии или в бесплатной версии с ограничением размера файлов, поддерживает русский язык и имеет низкие системные требования.",
-                status: "coming-soon",
-                features: [
-                    "Пакетная обработка файлов",
-                    "Поддержка 100+ форматов",
-                    "Автоматизация конвертации",
-                    "Настройка качества вывода",
-                    "Интеграция с облачными хранилищами"
-                ]
-            },
-            {
-                id: 4,
-                name: "Jobs Archive",
-                shortDescription: "Загрузчик видео из киноиндустрии (до 8K)",
-                fullDescription: "Jobs Archive – это удобный инструмент для скачивания видео по URL-ссылкам с популярных платформ, включая стриминговые сервисы, видеохостинги и киноархивы. Приложение автоматически определяет источник и предлагает варианты загрузки с качеством до 8K и выбором аудиодорожек, умеет обрабатывать плейлисты и ограниченные по времени материалы, автоматически сортирует файлы по категориям, проверяет соблюдение авторских прав и предлагает VPN-режим для конфиденциальности. Доступна бесплатная версия с базовым функционалом и платная подписка без ограничений для киноманов и профессионалов.",
-                status: "coming-soon",
-                features: [
-                    "Загрузка видео до 8K качества",
-                    "Поддержка всех популярных платформ",
-                    "Пакетная загрузка плейлистов",
-                    "Извлечение аудиодорожек",
-                    "Встроенный менеджер загрузок"
-                ]
-            },
-            {
-                id: 5,
-                name: "Lumière Cut",
-                shortDescription: "Видеоредактор (от монтажа до рендера)",
-                fullDescription: "Lumière Cut – это профессиональное приложение для видеомонтажа на ПК, сочетающее продвинутые возможности Adobe Premiere Pro и интуитивность CapCut. Оно поддерживает мультитрековый монтаж, работу с 4K- и HDR-видео, предлагает широкий выбор эффектов, переходов и инструментов цветокоррекции. Программа включает автоматические функции (умное кадрирование, шаблоны для соцсетей, ИИ-стабилизация) и ручные настройки (кривые цвета, ключевые кадры, работа с масками), поддерживает плагины и интеграцию с другими программами. Lumière Cut доступна с бесплатным базовым функционалом и возможностью расширения через подписку или разовые покупки, оптимизирована для работы на средне-бюджетных ПК и поддерживает облачное сохранение проектов.",
-                status: "coming-soon",
-                features: [
-                    "Многодорожечный монтаж",
-                    "Эффекты и переходы",
-                    "Цветокоррекция и грейдинг",
-                    "Кейфрейминг и анимация",
-                    "Рендеринг в 4K и 8K"
-                ]
-            },
-            {
-                id: 6,
-                name: "Marilyn Tone",
-                shortDescription: "Синтез речи и голосовые персонажи",
-                fullDescription: "Marilyn Tone – это инновационное приложение для ПК, преобразующее текст в выразительную речь и речь в текст с поддержкой голосов различных персонажей – от строгого профессора до задорного анимационного героя, включая знаменитые манеры (томный шёпот, драматичная декламация, энергичная рекламная подача). Программа использует нейросетевые технологии для естественного звучания с настройкой эмоциональной окраски, темпа, тембра и «возраста» голоса. Обратная функция конвертации речи в текст поддерживает диалекты, омонимы и работу в шумной среде. Приложение работает по подписке с бесплатным пробным периодом, интегрируется с плеерами, презентационными программами и игровыми движками, и является универсальным инструментом для блогеров, актёров озвучки и создателей образовательного контента.",
-                status: "coming-soon",
-                features: [
-                    "Реалистичный синтез речи",
-                    "Библиотека голосовых персонажей",
-                    "Настройка эмоций и интонации",
-                    "Поддержка множества языков",
-                    "Экспорт в аудиоформаты"
-                ]
-            },
-            {
-                id: 7,
-                name: "Newton Flow",
-                shortDescription: "Создание битов на тачпаде",
-                fullDescription: "Newton Flow – это интерактивный мини-тайпэд для ПК, превращающий обычный тачпад или сенсорную панель ноутбука в компактный MID-контроллер для создания битов, сэмплов и электронной музыки, вдохновленный инструментами AKAI MPC и Novation Launchpad. Он эмулирует сетку пэдов (4x4, 8x8 или настраиваемую) с тактильной отдачей и визуальной подсветкой, позволяет загружать собственные сэмплы, настраивать чувствительность и использовать встроенную библиотеку пресетов ударных и синтезаторных звуков. Приложение поддерживает MIDI-выход, интеграцию с DAW (FL Studio, Ableton Live) и запись джэмов в WAV/MP3. Бесплатная версия включает базовые функции, а платный апгрейд открывает мультитач-режим, продвинутое сэмплирование и AI-генерацию битов, что делает его идеальным инструментом для битмейкеров в дороге.",
-                status: "coming-soon",
-                features: [
-                    "Интуитивный тачпад-интерфейс",
-                    "Библиотека звуков и сэмплов",
-                    "Редактор паттернов",
-                    "Эффекты и обработка в реальном времени",
-                    "Экспорт в MIDI и аудио"
-                ]
-            },
-            {
-                id: 8,
-                name: "Picasso Art",
-                shortDescription: "Графический редактор с AI-инструментами",
-                fullDescription: "Picasso Art – это профессиональный графический редактор для ПК, вдохновленный возможностями Adobe Photoshop и предназначенный для цифровых художников, фотографов и дизайнеров. Он поддерживает работу со слоями, масками, смарт-объектами и продвинутыми инструментами ретуши, а также совместим с графическими планшетами. Программа сочетает профессиональные функции (кривые, уровни, цветокоррекция, фильтры, включая аналог Content-Aware Fill) с доступным интерфейсом и уникальными AI-инструментами для автоматического улучшения фото, удаления фона и генерации элементов. Доступна бесплатная версия с базовыми функциями и платная подписка (или разовая покупка) для доступа к расширенным инструментам, эксклюзивным кистям и пресетам. Picasso Art оптимизирован для работы на слабых ПК, поддерживает GPU-ускорение и облачное сохранение проектов, предлагая мощную альтернативу Photoshop без лишной сложности.",
-                status: "coming-soon",
-                features: [
-                    "AI-инструменты для рисования",
-                    "Слои и маски",
-                    "Фильтры и эффекты",
-                    "Поддержка графических планшетов",
-                    "Экспорт в PSD, PNG, SVG"
-                ]
-            },
-            {
-                id: 9,
-                name: "Michael Byte",
-                shortDescription: "Крутой 3D-текст (экспорт в PNG/JPG)",
-                fullDescription: "Michael Byte — это настольный инструмент экосистемы Mobius для профессиональной работы с текстовыми слоями на изображениях. Он обеспечивает точное позиционирование, поддержку горячих клавиш и работу с высоким разрешением, позволяя легко импортировать JPG, PNG и PSD файлы для добавления, редактирования и стилизации надписей. Глубокая интеграция с экосистемой Mobius позволяет экспортировать работы в другие приложения системы и синхронизировать шрифты и проекты через облачное хранилище Mobius Cloud. Инструмент предлагает расширенные функции типографики: управление слоями, выбор шрифтов с настройкой заливки, обводки, теней и интерлиньяжа, деформацию текста и работу с прозрачностью, обеспечивая идеальный баланс простоты и функциональности для создания мемов, постов для соцсетей и элементов дизайна.",
-                status: "coming-soon",
-                features: [
-                    "3D-моделирование текста",
-                    "Материалы и освещение",
-                    "Анимация и трансформации",
-                    "Предустановки стилей",
-                    "Экспорт в PNG и JPG"
-                ]
-            },
-            {
-                id: 10,
-                name: "Tarantino Catch",
-                shortDescription: "Запись экрана и веб-камеры с настройками",
-                fullDescription: "Tarantino Catch — это инструмент для одновременной записи видео с веб-камеры и экрана компьютера, объединяющий оба потока в один синхронизированный видеоролик. Он позволяет выбирать область записи, настраивать разрешение, частоту кадров и источники звука (системный аудиопоток и микрофон) для создания динамичного контента без сложного монтажа. Интеграция с экосистемой Mobius обеспечивает бесшовную передачу записанного материала в редактор платформы для дальнейшего монтажа, наложения эффектов и цветокоррекции, ускоряя процесс создания профессионального контента.",
-                status: "coming-soon",
-                features: [
-                    "Запись экрана и веб-камеры",
-                    "Настройка качества и FPS",
-                    "Запись системного звука",
-                    "Редактор записи",
-                    "Экспорт в популярные форматы"
-                ]
-            },
-            {
-                id: 11,
-                name: "Picasso Art Lite",
-                shortDescription: "Быстрая обработка фотографии с готовыми пресетами",
-                fullDescription: "Picasso Art Lite – это облегченная и высокоскоростная версия редактора Picasso Art для мгновенной обработки изображений, предлагающая быстрые настройки, пресеты в один клик и интуитивные кисти для ретуши, удаления объектов и работы с фоном. Она идеально подходит для повседневных задач: подготовки изображений для соцсетей, цветокоррекции и кадрирования, работает плавно даже на слабых компьютерах благодаря оптимизированному коду и минимальной нагрузке на систему, обеспечивая профессиональный результат без сложных функций и долгого обучения.",
-                status: "coming-soon",
-                features: [
-                    "Быстрая обработка фотографий",
-                    "Готовые пресеты и фильтры",
-                    "Коррекция цвета и света",
-                    "Ретушь портретов",
-                    "Пакетная обработка"
-                ]
-            },
-            {
-                id: 12,
-                name: "Mondrian Grid",
-                shortDescription: "Анализ цвета и работа с палитрами",
-                fullDescription: "Mondrian Grid – это профессиональное приложение для анализа цвета и работы с палитрами, разработанное на Python, которое предоставляет инструменты для извлечения доминирующих цветов из изображений с помощью алгоритма K-means, генерации цветовых гармоний по различным схемам (аналогичная, комплементарная, триадная и другие) и создания тематических схем. Программа поддерживает конвертацию между цветовыми моделями (HEX, RGB, HSL), проверку контраста по стандартам WCAG, оснащена системой истории палитр с автоматическим сохранением, конструктором тем для веб-дизайна и позволяет экспортировать результаты в форматы CSS, SCSS, GIMP Palette, JSON и PNG. Интерфейс выполнен в тёмной цветовой схеме с акцентами индиго для комфортной работы, что делает приложение подходящим как для быстрого анализа изображений, так и для профессиональной работы с цветом в дизайне и разработке интерфейсов.",
-                status: "coming-soon",
-                features: [
-                    "Анализ цветовых схем",
-                    "Создание палитр",
-                    "Контраст и доступность",
-                    "Экспорт палитр",
-                    "Интеграция с дизайн-системами"
-                ]
-            },
-            {
-                id: 13,
-                name: "William Wave",
-                shortDescription: "Аудио-редактор с современным интерфейсом",
-                fullDescription: "William Wave – это профессиональное аудио-редактирующее приложение на Python с современным графическим интерфейсом в тёмной цветовой схеме с акцентами индиго. Оно предоставляет комплексные инструменты для обработки звука, включая эквалайзер, компрессию, реверберацию, дилей, хорус, дисторшн и шумоподавление, поддерживает импорт основных аудиоформатов (WAV, FLAC, AIFF), запись звука в реальном времени и экспорт обработанных файлов. Приложение оснащено системой визуализации с отображением вейвформы, спектрограммы, частотного спектра и гистограммы амплитуд, применяет изменения в реальном времени с помощью фоновой потоковой обработки и отличается оптимизированной архитектурой с использованием многопоточности для работы без блокировки интерфейса и интеллектуальной системой отложенного применения эффектов. William Wave предлагает более 30 регулируемых параметров для точного контроля над звучанием и подходит как для быстрой обработки, так и для профессиональной настройки аудио.",
-                status: "coming-soon",
-                features: [
-                    "Современный интерфейс",
-                    "Многодорожечное редактирование",
-                    "Эффекты и плагины",
-                    "Спектральный анализ",
-                    "Экспорт в различные форматы"
-                ]
-            },
-            {
-                id: 14,
-                name: "Kailed AI",
-                shortDescription: "Генератор абстрактных узоров и текстур",
-                fullDescription: "Kailed AI – это мощный генератор абстрактных узоров и текстур для ПК, позволяющий создавать как случайные композиции, так и детально настроенные паттерны с поддержкой градиентов, сложных алгоритмов и художественных эффектов. Поддерживаются разнообразные типы узоров: от фракталов Мандельброта и диаграмм Вороного до геометрических примитивов, волновой интерференции и калейдоскопических орнаментов. Программа выделяется уникальными функциями, такими как комбинирование нескольких паттернов в одной композиции, AI-оптимизация визуальной сложности и продвинутая система пост-обработки с фильтрами и эффектами. Kailed AI предлагает интуитивный интерфейс с тремя основными режимами: случайное создание для мгновенного вдохновения, пользовательский режим для точного контроля и история для сохранения предыдущих работ. Приложение поддерживает экспорт в высоком разрешении, пакетную обработку и работает оффлайн, что делает его универсальным инструментом для дизайнеров, художников и цифровых творцов.",
-                status: "coming-soon",
-                features: [
-                    "Генерация абстрактных узоров и текстур",
-                    "AI-оптимизация визуальной сложности",
-                    "Пакетная обработка и экспорт в PNG/JPEG",
-                    "Комбинирование нескольких паттернов",
-                    "Расширенные инструменты пост-обработки"
-                ]
-            }
+            { id: 1, name: "Chopin Keys", status: "coming-soon" },
+            { id: 2, name: "Fibonacci Scan", status: "coming-soon" },
+            { id: 3, name: "Gagarin Bridge", status: "coming-soon" },
+            { id: 4, name: "Jobs Archive", status: "coming-soon" },
+            { id: 5, name: "Lumière Cut", status: "coming-soon" },
+            { id: 6, name: "Marilyn Tone", status: "coming-soon" },
+            { id: 7, name: "Newton Flow", status: "coming-soon" },
+            { id: 8, name: "Picasso Art", status: "coming-soon" },
+            { id: 9, name: "Michael Byte", status: "coming-soon" },
+            { id: 10, name: "Tarantino Catch", status: "coming-soon" },
+            { id: 11, name: "Picasso Art Lite", status: "coming-soon" },
+            { id: 12, name: "Mondrian Grid", status: "coming-soon" },
+            { id: 13, name: "William Wave", status: "coming-soon" },
+            { id: 14, name: "Kailed AI", status: "coming-soon" },
+            { id: 15, name: "Mobius Proxy", status: "coming-soon" }
         ];
 
-        // Платформы для каждого приложения (одинаковые для всех)
         const appPlatforms = {};
         apps.forEach(app => {
             appPlatforms[app.id] = {
@@ -653,18 +789,12 @@ window.yaContextCb.push(() => {
             }
         }
 
-        // ==================== Фильтрация ====================
-        let currentFilter = 'all';
-        function filterApps(filter) {
-            currentFilter = filter;
-            renderAppsGrid();
-        }
-
         // ==================== Рендер карточек ====================
         function renderAppsGrid() {
             appsGrid.innerHTML = '';
             const filtered = apps.filter(app => currentFilter === 'all' || app.status === currentFilter);
             filtered.forEach(app => {
+                const t = appTranslations[currentLang][app.name] || appTranslations.ru[app.name];
                 const card = document.createElement('div');
                 card.className = `app-card ${app.status}`;
                 card.tabIndex = 0;
@@ -672,8 +802,8 @@ window.yaContextCb.push(() => {
                     <div class="app-icon"><i class="fas fa-cube"></i></div>
                     <div class="app-info">
                         <h3>${app.name}</h3>
-                        <p class="short-desc">${app.shortDescription}</p>
-                        ${app.status === 'coming-soon' ? '<div class="coming-soon-badge">СКОРО</div>' : ''}
+                        <p class="short-desc">${t.short}</p>
+                        ${app.status === 'coming-soon' ? '<div class="coming-soon-badge">' + (currentLang === 'ru' ? 'СКОРО' : currentLang === 'en' ? 'COMING SOON' : currentLang === 'zh' ? '即将推出' : 'PRÓXIMAMENTE') + '</div>' : ''}
                     </div>
                 `;
                 card.addEventListener('click', () => showAppModal(app.id));
@@ -684,10 +814,12 @@ window.yaContextCb.push(() => {
 
         // ==================== Рендер dropdown ====================
         function renderAppsDropdown() {
+            appsDropdown.innerHTML = '';
             apps.forEach(app => {
+                const t = appTranslations[currentLang][app.name] || appTranslations.ru[app.name];
                 const item = document.createElement('a');
                 item.href = '#';
-                item.innerHTML = `<span class="app-name">${app.name}</span>${app.status === 'coming-soon' ? '<span class="coming-soon">СКОРО</span>' : ''}`;
+                item.innerHTML = `<span class="app-name">${app.name}</span>${app.status === 'coming-soon' ? '<span class="coming-soon">' + (currentLang === 'ru' ? 'СКОРО' : currentLang === 'en' ? 'SOON' : currentLang === 'zh' ? '即将' : 'PRÓXIMO') + '</span>' : ''}`;
                 item.addEventListener('click', e => { e.preventDefault(); showAppModal(app.id); });
                 appsDropdown.appendChild(item);
             });
@@ -698,21 +830,21 @@ window.yaContextCb.push(() => {
             const app = apps.find(a => a.id === appId);
             if (!app) return;
 
+            const t = appTranslations[currentLang][app.name] || appTranslations.ru[app.name];
             const platforms = appPlatforms[appId];
 
             document.getElementById('modal-title').textContent = app.name;
-            document.getElementById('modal-short-description').textContent = app.shortDescription;
-            document.getElementById('modal-full-description').textContent = app.fullDescription;
+            document.getElementById('modal-short-description').textContent = t.short;
+            document.getElementById('modal-full-description').textContent = t.full;
 
             const featuresList = document.getElementById('modal-features');
             featuresList.innerHTML = '';
-            app.features.forEach(f => {
+            t.features.forEach(f => {
                 const li = document.createElement('li');
                 li.textContent = f;
                 featuresList.appendChild(li);
             });
 
-            // ПК-кнопки
             const pcBtn = document.getElementById('pc-platform-buttons');
             pcBtn.innerHTML = '';
             platforms.pc.forEach(p => {
@@ -723,14 +855,13 @@ window.yaContextCb.push(() => {
                 pcBtn.appendChild(btn);
             });
 
-            // Мобильные кнопки
             const mobBtn = document.getElementById('mobile-platform-buttons');
             mobBtn.innerHTML = '';
             platforms.mobile.forEach(p => {
                 const btn = document.createElement('a');
                 btn.href = p.url;
                 btn.className = `platform-btn ${p.soon ? 'soon' : ''}`;
-                btn.innerHTML = `<i class="${p.icon}"></i><span>${p.name}${p.soon ? ' (Скоро)' : ''}</span>`;
+                btn.innerHTML = `<i class="${p.icon}"></i><span>${p.name}${p.soon ? ' (' + translations[currentLang]['coming-soon'] + ')' : ''}</span>`;
                 mobBtn.appendChild(btn);
             });
 
@@ -756,7 +887,8 @@ window.yaContextCb.push(() => {
             filterBtns.forEach(btn => btn.addEventListener('click', () => {
                 filterBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                filterApps(btn.dataset.filter);
+                currentFilter = btn.dataset.filter;
+                renderAppsGrid();
             }));
 
             // Рекламная кнопка
@@ -766,19 +898,16 @@ window.yaContextCb.push(() => {
             closeBtns.forEach(btn => btn.addEventListener('click', () => closeModal(btn.closest('.modal'))));
             window.addEventListener('click', e => { if (e.target.classList.contains('modal')) closeModal(e.target); });
 
-            // Ad-block detection (можно добавить логику)
-            detectAdBlock().then(isBlocked => { if (isBlocked) console.log('Ad-blocker detected'); });
-        });
-
-        // Ad-block detection
-        function detectAdBlock() {
-            return new Promise(resolve => {
-                const ad = document.querySelector('.ad-banner');
-                if (!ad) { resolve(true); return; }
-                const s = window.getComputedStyle(ad);
-                resolve(s.display === 'none' || s.visibility === 'hidden' || s.opacity === '0' || s.width === '0px' || s.height === '0px');
+            // Кнопки языка
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    translate(btn.dataset.lang);
+                });
             });
-        }
+
+            // Инициализация с русским
+            translate('ru');
+        });
     </script>
 </body>
 </html>
