@@ -22,20 +22,13 @@
 <body>
 <!-- Yandex.RTB R-A-17628151-5 -->
 <script>
-  let fullscreenShown = false;
-  function showFullscreenAd() {
-    if (fullscreenShown) return;
-    fullscreenShown = true;
-    window.yaContextCb.push(() => {
-      Ya.Context.AdvManager.render({
-        blockId: "R-A-17628151-5",
-        type: "fullscreen",
-        platform: "desktop"
-      });
+  window.yaContextCb.push(() => {
+    Ya.Context.AdvManager.render({
+      "blockId": "R-A-17628151-5",
+      "type": "fullscreen",
+      "platform": "desktop"
     });
-  }
-  document.addEventListener('click', showFullscreenAd, { once: true });
-  document.addEventListener('scroll', showFullscreenAd, { once: true });
+  });
 </script>
 <!-- Yandex.RTB R-A-17628151-6 -->
 <script>
