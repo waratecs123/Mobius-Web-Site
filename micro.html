@@ -207,6 +207,7 @@
                 "Linux": "Linux",
                 "macOS": "macOS",
                 "download-platform": "Скачать для {platform}",
+                "coming-soon": "Скоро",
 
                 // Карточки утилит (имя + описание)
                 "Quick Converter_name": "Quick Converter",
@@ -306,6 +307,7 @@
                 "Linux": "Linux",
                 "macOS": "macOS",
                 "download-platform": "Download for {platform}",
+                "coming-soon": "Coming Soon",
 
                 "Quick Converter_name": "Quick Converter",
                 "Quick Converter_desc": "Fast file converter with support for all popular formats",
@@ -404,6 +406,7 @@
                 "Linux": "Linux",
                 "macOS": "macOS",
                 "download-platform": "下载 {platform} 版本",
+                "coming-soon": "即将推出",
 
                 "Quick Converter_name": "快速转换器",
                 "Quick Converter_desc": "支持所有流行格式的快速文件转换器",
@@ -467,7 +470,7 @@
                 "генератор": "生成器",
                 "криптография": "加密",
                 "автоматизация": "自动化",
-                " Readings": "结构",
+                "структура": "结构",
                 "dns": "dns"
             },
             es: {
@@ -502,6 +505,7 @@
                 "Linux": "Linux",
                 "macOS": "macOS",
                 "download-platform": "Descargar para {platform}",
+                "coming-soon": "Próximamente",
 
                 "Quick Converter_name": "Convertidor Rápido",
                 "Quick Converter_desc": "Convertidor rápido de archivos con soporte para todos los formatos populares",
@@ -582,18 +586,18 @@
 
         // ==================== ДАННЫЕ УТИЛИТ (ТЕПЕРЬ С КЛЮЧАМИ ДЛЯ ПЕРЕВОДА) ====================
         const utilities = [
-            { id: 1, key: "Quick Converter", category: "system", tags: ["конвертер", "файлы", "форматы", "быстрый"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#" }, { name: "Linux", icon: "fab fa-linux", url: "#" }, { name: "macOS", icon: "fab fa-apple", url: "#" }] },
-            { id: 2, key: "Image Optimizer", category: "media", tags: ["изображения", "оптимизация", "сжатие", "фото"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#" }, { name: "Linux", icon: "fab fa-linux", url: "#" }, { name: "macOS", icon: "fab fa-apple", url: "#" }] },
-            { id: 3, key: "Text Editor Pro", category: "development", tags: ["текст", "редактор", "код", "синтаксис"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#" }, { name: "Linux", icon: "fab fa-linux", url: "#" }, { name: "macOS", icon: "fab fa-apple", url: "#" }] },
-            { id: 4, key: "Network Monitor", category: "network", tags: ["сеть", "мониторинг", "трафик", "интернет"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#" }, { name: "Linux", icon: "fab fa-linux", url: "#" }, { name: "macOS", icon: "fab fa-apple", url: "#" }] },
-            { id: 5, key: "Audio Cutter", category: "media", tags: ["аудио", "обрезка", "редактор", "звук"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#" }, { name: "Linux", icon: "fab fa-linux", url: "#" }, { name: "macOS", icon: "fab fa-apple", url: "#" }] },
-            { id: 6, key: "Task Manager", category: "productivity", tags: ["задачи", "продуктивность", "организация", "время"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#" }, { name: "Linux", icon: "fab fa-linux", url: "#" }, { name: "macOS", icon: "fab fa-apple", url: "#" }] },
-            { id: 7, key: "Code Formatter", category: "development", tags: ["код", "форматирование", "разработка", "стандарты"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#" }, { name: "Linux", icon: "fab fa-linux", url: "#" }, { name: "macOS", icon: "fab fa-apple", url: "#" }] },
-            { id: 8, key: "System Cleaner", category: "system", tags: ["система", "очистка", "оптимизация", "файлы"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#" }, { name: "Linux", icon: "fab fa-linux", url: "#" }, { name: "macOS", icon: "fab fa-apple", url: "#" }] },
-            { id: 9, key: "Video Compressor", category: "media", tags: ["видео", "сжатие", "конвертация", "мультимедиа"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#" }, { name: "Linux", icon: "fab fa-linux", url: "#" }, { name: "macOS", icon: "fab fa-apple", url: "#" }] },
-            { id: 10, key: "Password Generator", category: "productivity", tags: ["пароли", "безопасность", "генератор", "криптография"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#" }, { name: "Linux", icon: "fab fa-linux", url: "#" }, { name: "macOS", icon: "fab fa-apple", url: "#" }] },
-            { id: 11, key: "File Organizer", category: "productivity", tags: ["файлы", "организация", "автоматизация", "структура"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#" }, { name: "Linux", icon: "fab fa-linux", url: "#" }, { name: "macOS", icon: "fab fa-apple", url: "#" }] },
-            { id: 12, key: "DNS Changer", category: "network", tags: ["сеть", "dns", "интернет", "безопасность"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#" }, { name: "Linux", icon: "fab fa-linux", url: "#" }, { name: "macOS", icon: "fab fa-apple", url: "#" }] }
+            { id: 1, key: "Quick Converter", category: "system", tags: ["конвертер", "файлы", "форматы", "быстрый"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#", available: true }, { name: "Linux", icon: "fab fa-linux", url: "#", available: false }, { name: "macOS", icon: "fab fa-apple", url: "#", available: false }] },
+            { id: 2, key: "Image Optimizer", category: "media", tags: ["изображения", "оптимизация", "сжатие", "фото"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "https://github.com/radjaechpochmakov/Download_Application_1/releases/download/0.0.1/Mobius.-.Image.Optimizer.exe", available: true }, { name: "Linux", icon: "fab fa-linux", url: "#", available: false }, { name: "macOS", icon: "fab fa-apple", url: "#", available: false }] },
+            { id: 3, key: "Text Editor Pro", category: "development", tags: ["текст", "редактор", "код", "синтаксис"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#", available: true }, { name: "Linux", icon: "fab fa-linux", url: "#", available: false }, { name: "macOS", icon: "fab fa-apple", url: "#", available: false }] },
+            { id: 4, key: "Network Monitor", category: "network", tags: ["сеть", "мониторинг", "трафик", "интернет"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#", available: true }, { name: "Linux", icon: "fab fa-linux", url: "#", available: false }, { name: "macOS", icon: "fab fa-apple", url: "#", available: false }] },
+            { id: 5, key: "Audio Cutter", category: "media", tags: ["аудио", "обрезка", "редактор", "звук"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#", available: true }, { name: "Linux", icon: "fab fa-linux", url: "#", available: false }, { name: "macOS", icon: "fab fa-apple", url: "#", available: false }] },
+            { id: 6, key: "Task Manager", category: "productivity", tags: ["задачи", "продуктивность", "организация", "время"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#", available: true }, { name: "Linux", icon: "fab fa-linux", url: "#", available: false }, { name: "macOS", icon: "fab fa-apple", url: "#", available: false }] },
+            { id: 7, key: "Code Formatter", category: "development", tags: ["код", "форматирование", "разработка", "стандарты"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#", available: true }, { name: "Linux", icon: "fab fa-linux", url: "#", available: false }, { name: "macOS", icon: "fab fa-apple", url: "#", available: false }] },
+            { id: 8, key: "System Cleaner", category: "system", tags: ["система", "очистка", "оптимизация", "файлы"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#", available: true }, { name: "Linux", icon: "fab fa-linux", url: "#", available: false }, { name: "macOS", icon: "fab fa-apple", url: "#", available: false }] },
+            { id: 9, key: "Video Compressor", category: "media", tags: ["видео", "сжатие", "конвертация", "мультимедиа"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#", available: true }, { name: "Linux", icon: "fab fa-linux", url: "#", available: false }, { name: "macOS", icon: "fab fa-apple", url: "#", available: false }] },
+            { id: 10, key: "Password Generator", category: "productivity", tags: ["пароли", "безопасность", "генератор", "криптография"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#", available: true }, { name: "Linux", icon: "fab fa-linux", url: "#", available: false }, { name: "macOS", icon: "fab fa-apple", url: "#", available: false }] },
+            { id: 11, key: "File Organizer", category: "productivity", tags: ["файлы", "организация", "автоматизация", "структура"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#", available: true }, { name: "Linux", icon: "fab fa-linux", url: "#", available: false }, { name: "macOS", icon: "fab fa-apple", url: "#", available: false }] },
+            { id: 12, key: "DNS Changer", category: "network", tags: ["сеть", "dns", "интернет", "безопасность"], platforms: [{ name: "Windows", icon: "fab fa-windows", url: "#", available: true }, { name: "Linux", icon: "fab fa-linux", url: "#", available: false }, { name: "macOS", icon: "fab fa-apple", url: "#", available: false }] }
         ];
 
         let currentCategory = 'all';
@@ -754,11 +758,21 @@
                 const name = t(utility.key + '_name');
                 const desc = t(utility.key + '_desc');
 
-                const platformsHTML = utility.platforms.map(p => `
-                    <a href="${p.url}" class="platform-btn small" title="${t('download-platform', {platform: t(p.name)})}>
-                        <i class="${p.icon}"></i><span>${t(p.name)}</span>
-                    </a>
-                `).join('');
+                const platformsHTML = utility.platforms.map(p => {
+                    if (p.available) {
+                        return `
+                            <a href="${p.url}" class="platform-btn small" title="${t('download-platform', {platform: t(p.name)})}">
+                                <i class="${p.icon}"></i><span>${t(p.name)}</span>
+                            </a>
+                        `;
+                    } else {
+                        return `
+                            <div class="platform-btn small coming-soon" title="${t('coming-soon')}">
+                                <i class="${p.icon}"></i><span>${t('coming-soon')}</span>
+                            </div>
+                        `;
+                    }
+                }).join('');
 
                 const tagsHTML = utility.tags.map(tag => `<span class="utility-tag">${t(tag)}</span>`).join('');
 
@@ -1124,6 +1138,32 @@
             min-height: 44px;
             border-radius: 10px;
             text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .platform-btn.small:not(.coming-soon) {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .platform-btn.small:not(.coming-soon):hover {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .platform-btn.small.coming-soon {
+            background: var(--highlight-color);
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+            cursor: not-allowed;
+            opacity: 0.7;
         }
 
         .platform-btn.small i {
