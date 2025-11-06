@@ -1301,6 +1301,133 @@ footer {
     font-size: 1.1rem;
 }
 
+/* Apps Page Specific Styles */
+.apps-hero {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    color: var(--secondary-color);
+    padding: 8rem 0 4rem;
+    text-align: center;
+}
+
+.apps-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.apps-hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--highlight-color);
+}
+
+.main-apps-section {
+    padding: 4rem 0;
+}
+
+.additional-apps-section {
+    padding: 4rem 0;
+    background-color: var(--highlight-color);
+}
+
+.integration-section {
+    padding: 4rem 0;
+}
+
+.integration-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.integration-text {
+    flex: 1;
+}
+
+.integration-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.integration-text ul {
+    list-style: none;
+}
+
+.integration-text li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.integration-text li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.integration-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.ecosystem-circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.center-app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--gradient);
+    color: var(--secondary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    z-index: 2;
+}
+
+.orbit-app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(var(--angle)) translateX(150px) rotate(calc(-1 * var(--angle)));
+    background: var(--secondary-color);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    border: 2px solid var(--primary-color);
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    min-width: 80px;
+}
+
+.orbit-app::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -151px;
+    width: 150px;
+    height: 2px;
+    background: var(--accent-color);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.back-section {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: var(--highlight-color);
+}
+
 /* Мобильная адаптация - улучшения */
 @media (max-width: 768px) {
     /* Улучшение геро-секции */
@@ -1534,6 +1661,37 @@ footer {
     /* Улучшение контейнера */
     .container {
         padding: 0 15px;
+    }
+
+    /* Apps Page Mobile */
+    .apps-hero {
+        padding: 6rem 0 3rem;
+    }
+
+    .apps-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .integration-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .ecosystem-circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .orbit-app {
+        transform: translate(-50%, -50%) rotate(var(--angle)) translateX(120px) rotate(calc(-1 * var(--angle)));
+        font-size: 0.875rem;
+        min-width: 70px;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .orbit-app::before {
+        left: -121px;
+        width: 120px;
     }
 }
 
