@@ -396,6 +396,146 @@
             font-size: 18px;
         }
 
+        /* Legal Documents Section */
+        .legal-documents {
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .legal-documents::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #fff, transparent);
+        }
+
+        .legal-documents h2 {
+            font-size: 42px;
+            margin-bottom: 60px;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            position: relative;
+            display: inline-block;
+        }
+
+        .legal-documents h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background: #fff;
+        }
+
+        .legal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .legal-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            padding: 35px 25px;
+            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .legal-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transition: left 0.7s;
+        }
+
+        .legal-card:hover::before {
+            left: 100%;
+        }
+
+        .legal-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .legal-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: inline-block;
+            transition: all 0.4s ease;
+            background: linear-gradient(45deg, #fff, #b0b0b0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+        }
+
+        .legal-card:hover .legal-icon {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        .legal-card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .legal-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.5px;
+        }
+
+        .legal-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s;
+        }
+
+        .legal-link:hover::before {
+            left: 100%;
+        }
+
+        .legal-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -548,6 +688,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .legal-grid {
+                grid-template-columns: 1fr;
+            }
+
             header {
                 padding-top: 140px;
             }
@@ -558,6 +702,10 @@
             }
 
             .contact-icon {
+                font-size: 42px;
+            }
+
+            .legal-icon {
                 font-size: 42px;
             }
         }
@@ -675,6 +823,56 @@
             </div>
         </section>
 
+        <!-- Legal Documents Section -->
+        <section class="legal-documents">
+            <h2 data-t="legal-title">Правовые документы</h2>
+            <div class="legal-grid">
+                <div class="legal-card">
+                    <div class="legal-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 data-t="legal-en">Английский</h3>
+                    <a href="https://github.com/waratecs123/All_Documents_For_Mobius/tree/main/English" class="legal-link" target="_blank">
+                        <i class="fas fa-external-link-alt link-icon"></i>
+                        <span data-t="legal-view">Просмотреть</span>
+                    </a>
+                </div>
+
+                <div class="legal-card">
+                    <div class="legal-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 data-t="legal-es">Испанский</h3>
+                    <a href="https://github.com/waratecs123/All_Documents_For_Mobius/tree/main/Español" class="legal-link" target="_blank">
+                        <i class="fas fa-external-link-alt link-icon"></i>
+                        <span data-t="legal-view">Просмотреть</span>
+                    </a>
+                </div>
+
+                <div class="legal-card">
+                    <div class="legal-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3 data-t="legal-ru">Русский</h3>
+                    <a href="https://github.com/waratecs123/All_Documents_For_Mobius/tree/main/Русский" class="legal-link" target="_blank">
+                        <i class="fas fa-external-link-alt link-icon"></i>
+                        <span data-t="legal-view">Просмотреть</span>
+                    </a>
+                </div>
+
+                <div class="legal-card">
+                    <div class="legal-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3 data-t="legal-zh">Китайский</h3>
+                    <a href="https://github.com/waratecs123/All_Documents_For_Mobius/tree/main/中文" class="legal-link" target="_blank">
+                        <i class="fas fa-external-link-alt link-icon"></i>
+                        <span data-t="legal-view">Просмотреть</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer>
             <p class="footer-text" data-t="footer-text">Möbius © 2025 • Проект разрабатывается на чистом энтузиазме</p>
@@ -711,6 +909,12 @@
                 "feedback-title": "Обратная связь",
                 "feedback-desc": "Поделитесь своими идеями и предложениями",
                 "feedback-link": "Оставить отзыв",
+                "legal-title": "Правовые документы",
+                "legal-en": "Английский",
+                "legal-es": "Испанский",
+                "legal-ru": "Русский",
+                "legal-zh": "Китайский",
+                "legal-view": "Просмотреть",
                 "footer-text": "Möbius © 2025 • Проект разрабатывается на чистом энтузиазме"
             },
             en: {
@@ -740,6 +944,12 @@
                 "feedback-title": "Feedback",
                 "feedback-desc": "Share your ideas and suggestions",
                 "feedback-link": "Leave feedback",
+                "legal-title": "Legal Documents",
+                "legal-en": "English",
+                "legal-es": "Spanish",
+                "legal-ru": "Russian",
+                "legal-zh": "Chinese",
+                "legal-view": "View",
                 "footer-text": "Möbius © 2025 • Project developed with pure enthusiasm"
             },
             zh: {
@@ -769,6 +979,12 @@
                 "feedback-title": "反馈",
                 "feedback-desc": "分享您的想法和建议",
                 "feedback-link": "留下反馈",
+                "legal-title": "法律文件",
+                "legal-en": "英文",
+                "legal-es": "西班牙文",
+                "legal-ru": "俄文",
+                "legal-zh": "中文",
+                "legal-view": "查看",
                 "footer-text": "Möbius © 2025 • 项目基于纯粹热情开发"
             },
             es: {
@@ -798,6 +1014,12 @@
                 "feedback-title": "Comentarios",
                 "feedback-desc": "Comparte tus ideas y sugerencias",
                 "feedback-link": "Dejar comentarios",
+                "legal-title": "Documentos Legales",
+                "legal-en": "Inglés",
+                "legal-es": "Español",
+                "legal-ru": "Ruso",
+                "legal-zh": "Chino",
+                "legal-view": "Ver",
                 "footer-text": "Möbius © 2025 • Proyecto desarrollado con puro entusiasmo"
             }
         };
