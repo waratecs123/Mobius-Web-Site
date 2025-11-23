@@ -236,6 +236,134 @@
             background: linear-gradient(90deg, transparent, #fff, transparent);
         }
 
+        /* Applications Section */
+        .applications {
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .applications::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #fff, transparent);
+        }
+
+        .applications h2 {
+            font-size: 42px;
+            margin-bottom: 60px;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            position: relative;
+            display: inline-block;
+        }
+
+        .applications h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background: #fff;
+        }
+
+        .applications-intro {
+            font-size: 20px;
+            max-width: 1000px;
+            margin: 0 auto 50px;
+            line-height: 1.7;
+            opacity: 0.9;
+            color: #fff;
+        }
+
+        .applications-table-container {
+            overflow-x: auto;
+            margin: 0 auto;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            padding: 20px;
+        }
+
+        .applications-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+
+        .applications-table th {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 18px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .applications-table th::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #fff, transparent);
+        }
+
+        .applications-table td {
+            padding: 20px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .applications-table tr:hover td {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .app-name {
+            font-weight: 600;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .app-description {
+            font-size: 16px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .app-platform {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .platform-icon {
+            font-size: 20px;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+
+        .platform-icon:hover {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
         /* Contacts Section */
         .contacts {
             padding: 80px 0;
@@ -684,6 +812,15 @@
                 font-size: 18px;
             }
 
+            .applications-table-container {
+                padding: 10px;
+            }
+
+            .applications-table th,
+            .applications-table td {
+                padding: 15px 10px;
+            }
+
             .contact-grid {
                 grid-template-columns: 1fr;
             }
@@ -743,6 +880,161 @@
             <p data-t="hero-p1">Möbius — это проект, разрабатываемый с нуля и на чистом энтузиазме. Мы верим, что мощные инструменты для творчества должны быть доступны каждому, независимо от финансовых возможностей.</p>
             <p data-t="hero-p2">Наша команда работает над созданием универсальной платформы, которая объединит все необходимые инструменты для работы с видео, аудио, графикой и мультимедиа в одном пространстве.</p>
             <p data-t="hero-p3"><span class="highlight" data-t="highlight">Присоединяйтесь к нашему сообществу</span> <span data-t="highlight-text">и следите за развитием проекта!</span></p>
+        </section>
+
+        <!-- Applications Section -->
+        <section class="applications">
+            <h2 data-t="applications-title">Приложения Möbius</h2>
+            <p class="applications-intro" data-t="applications-intro">Möbius — это унифицированная платформа, содержащая эти мощные специализированные приложения:</p>
+
+            <div class="applications-table-container">
+                <table class="applications-table">
+                    <thead>
+                        <tr>
+                            <th data-t="app-name-header">Приложение</th>
+                            <th data-t="app-description-header">Описание</th>
+                            <th data-t="app-platform-header">Платформа</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="app-name">Mobius Proxy</td>
+                            <td class="app-description" data-t="app-proxy-desc">Мощный менеджер прокси-подключений: HTTP/HTTPS, SOCKS4/5, цепочки прокси, AI-оптимизация скорости, массовая проверка работоспособности, мониторинг, экспорт и автономный режим. Идеально для SEO-специалистов, разработчиков и цифровых маркетологов.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Chopin Keys</td>
+                            <td class="app-description" data-t="app-chopin-desc">Полнофункциональная цифровая аудио рабочая станция (DAW) с AI-ассистентом для композиции и мастеринга музыки.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Fibonacci Scan</td>
+                            <td class="app-description" data-t="app-fibonacci-desc">Продвинутый генератор и сканер QR-кодов с дизайнерскими настройками и аналитикой.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Gagarin Bridge</td>
+                            <td class="app-description" data-t="app-gagarin-desc">Универсальный конвертер файлов, поддерживающий видео, аудио и документы с пакетной обработкой.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Jobs Archive</td>
+                            <td class="app-description" data-t="app-jobs-desc">Высококачественный видео-загрузчик для контента кинематографического качества с поддержкой разрешений до 8K.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Lumière Cut</td>
+                            <td class="app-description" data-t="app-lumiere-desc">Мощный видеоредактор, оптимизированный для работы на любом ПК — от быстрых клипов для соцсетей до полнометражных фильмов.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Marilyn Tone</td>
+                            <td class="app-description" data-t="app-marilyn-desc">Движок синтеза речи и распознавания голоса с уникальными настраиваемыми "голосовыми персонами".</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Newton Flow</td>
+                            <td class="app-description" data-t="app-newton-desc">MIDI-контроллер, превращающий ваш тачпад в инструмент для создания битов в любое время и в любом месте.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Picasso Art</td>
+                            <td class="app-description" data-t="app-picasso-desc">Продвинутый редактор растровой и векторной графики, оснащенный инструментами на основе ИИ для создания потрясающих визуальных эффектов.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Picasso Art Lite</td>
+                            <td class="app-description" data-t="app-picasso-lite-desc">Облегченная и высокоскоростная версия профессионального редактора Picasso Art. Идеально подходит для повседневных задач: ретуширования фотографий, подготовки изображений для социальных сетей, цветокоррекции и кадрирования.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Michael Byte</td>
+                            <td class="app-description" data-t="app-michael-desc">Создавайте крутой 3D-текст и экспортируйте его в PNG или JPG для ваших проектов.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Tarantino Catch</td>
+                            <td class="app-description" data-t="app-tarantino-desc">Записывайте свой экран и веб-камеру с гибкими настройками качества и источников.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Kailed AI</td>
+                            <td class="app-description" data-t="app-kailed-desc">Мощный генератор абстрактных узоров и текстур с поддержкой фракталов, градиентов и визуальной сложности, оптимизированной с помощью ИИ.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">Mondrian Grid</td>
+                            <td class="app-description" data-t="app-mondrian-desc">Профессиональное приложение для анализа цвета и палитр. Поддерживает извлечение доминирующих цветов из изображений, генерацию цветовых гармоний и создание тематических схем.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-name">William Wave</td>
+                            <td class="app-description" data-t="app-william-desc">Профессиональное приложение для редактирования аудио с современным графическим интерфейсом. Предоставляет комплексный набор инструментов для обработки звука, включая эквалайзер, компрессию, реверберацию и шумоподавление.</td>
+                            <td class="app-platform">
+                                <i class="fab fa-windows platform-icon"></i>
+                                <i class="fab fa-linux platform-icon"></i>
+                                <i class="fab fa-apple platform-icon"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <!-- Contacts Section -->
@@ -891,6 +1183,26 @@
                 "hero-p3": "Присоединяйтесь к нашему сообществу и следите за развитием проекта!",
                 "highlight": "Присоединяйтесь к нашему сообществу",
                 "highlight-text": "и следите за развитием проекта!",
+                "applications-title": "Приложения Möbius",
+                "applications-intro": "Möbius — это унифицированная платформа, содержащая эти мощные специализированные приложения:",
+                "app-name-header": "Приложение",
+                "app-description-header": "Описание",
+                "app-platform-header": "Платформа",
+                "app-proxy-desc": "Мощный менеджер прокси-подключений: HTTP/HTTPS, SOCKS4/5, цепочки прокси, AI-оптимизация скорости, массовая проверка работоспособности, мониторинг, экспорт и автономный режим. Идеально для SEO-специалистов, разработчиков и цифровых маркетологов.",
+                "app-chopin-desc": "Полнофункциональная цифровая аудио рабочая станция (DAW) с AI-ассистентом для композиции и мастеринга музыки.",
+                "app-fibonacci-desc": "Продвинутый генератор и сканер QR-кодов с дизайнерскими настройками и аналитикой.",
+                "app-gagarin-desc": "Универсальный конвертер файлов, поддерживающий видео, аудио и документы с пакетной обработкой.",
+                "app-jobs-desc": "Высококачественный видео-загрузчик для контента кинематографического качества с поддержкой разрешений до 8K.",
+                "app-lumiere-desc": "Мощный видеоредактор, оптимизированный для работы на любом ПК — от быстрых клипов для соцсетей до полнометражных фильмов.",
+                "app-marilyn-desc": "Движок синтеза речи и распознавания голоса с уникальными настраиваемыми \"голосовыми персонами\".",
+                "app-newton-desc": "MIDI-контроллер, превращающий ваш тачпад в инструмент для создания битов в любое время и в любом месте.",
+                "app-picasso-desc": "Продвинутый редактор растровой и векторной графики, оснащенный инструментами на основе ИИ для создания потрясающих визуальных эффектов.",
+                "app-picasso-lite-desc": "Облегченная и высокоскоростная версия профессионального редактора Picasso Art. Идеально подходит для повседневных задач: ретуширования фотографий, подготовки изображений для социальных сетей, цветокоррекции и кадрирования.",
+                "app-michael-desc": "Создавайте крутой 3D-текст и экспортируйте его в PNG или JPG для ваших проектов.",
+                "app-tarantino-desc": "Записывайте свой экран и веб-камеру с гибкими настройками качества и источников.",
+                "app-kailed-desc": "Мощный генератор абстрактных узоров и текстур с поддержкой фракталов, градиентов и визуальной сложности, оптимизированной с помощью ИИ.",
+                "app-mondrian-desc": "Профессиональное приложение для анализа цвета и палитр. Поддерживает извлечение доминирующих цветов из изображений, генерацию цветовых гармоний и создание тематических схем.",
+                "app-william-desc": "Профессиональное приложение для редактирования аудио с современным графическим интерфейсом. Предоставляет комплексный набор инструментов для обработки звука, включая эквалайзер, компрессию, реверберацию и шумоподавление.",
                 "contacts-title": "Наши контакты",
                 "youtube-title": "YouTube",
                 "youtube-desc": "Следите за обновлениями и обучающими материалами",
@@ -926,6 +1238,26 @@
                 "hero-p3": "Join our community and follow the project development!",
                 "highlight": "Join our community",
                 "highlight-text": "and follow the project development!",
+                "applications-title": "Möbius Applications",
+                "applications-intro": "Möbius is a unified platform containing these powerful, specialized applications:",
+                "app-name-header": "Application",
+                "app-description-header": "Description",
+                "app-platform-header": "Platform",
+                "app-proxy-desc": "Powerful proxy connection manager: HTTP/HTTPS, SOCKS4/5, proxy chaining, AI speed optimization, bulk health check, monitoring, export, and offline mode. Perfect for SEO specialists, developers, and digital marketers.",
+                "app-chopin-desc": "A full-featured Digital Audio Workstation (DAW) with an AI assistant for music composition and mastering.",
+                "app-fibonacci-desc": "An advanced QR code generator and scanner with designer customization and analytics.",
+                "app-gagarin-desc": "A universal file converter supporting video, audio, and documents with batch processing.",
+                "app-jobs-desc": "A high-quality video downloader for cinema-grade content with support for resolutions up to 8K.",
+                "app-lumiere-desc": "A powerful video editor optimized to run on any PC—from quick social clips to full-length features.",
+                "app-marilyn-desc": "A speech synthesis and voice recognition engine with unique, customizable \"voice personas\".",
+                "app-newton-desc": "A MIDI controller that turns your touchpad into an instrument for making beats anytime, anywhere.",
+                "app-picasso-desc": "An advanced raster and vector graphics editor, equipped with AI-powered tools for stunning visuals.",
+                "app-picasso-lite-desc": "A lightweight and high-speed version of the professional Picasso Art editor. Perfect for everyday tasks: photo retouching, social media image preparation, color correction and cropping.",
+                "app-michael-desc": "Create cool 3D text and export it to PNG or JPG for your projects.",
+                "app-tarantino-desc": "Record your screen and webcam with flexible quality and source settings.",
+                "app-kailed-desc": "A powerful generator of abstract patterns and textures with support for fractals, gradients, and AI-optimized visual complexity.",
+                "app-mondrian-desc": "Professional color analysis and palette application. Supports extracting dominant colors from images, generating color harmonies and creating thematic schemes.",
+                "app-william-desc": "Professional audio editing application with modern GUI. Provides a comprehensive set of sound processing tools including equalizer, compression, reverb and noise reduction.",
                 "contacts-title": "Our contacts",
                 "youtube-title": "YouTube",
                 "youtube-desc": "Follow updates and tutorials",
@@ -961,6 +1293,26 @@
                 "hero-p3": "加入我们的社区，关注项目发展！",
                 "highlight": "加入我们的社区",
                 "highlight-text": "并关注项目发展！",
+                "applications-title": "Möbius 应用程序",
+                "applications-intro": "Möbius 是一个统一平台，包含这些强大的专业应用程序：",
+                "app-name-header": "应用程序",
+                "app-description-header": "描述",
+                "app-platform-header": "平台",
+                "app-proxy-desc": "强大的代理连接管理器：HTTP/HTTPS、SOCKS4/5、代理链、AI速度优化、批量健康检查、监控、导出和离线模式。非常适合SEO专家、开发人员和数字营销人员。",
+                "app-chopin-desc": "功能齐全的数字音频工作站（DAW），带有用于音乐创作和母带处理的AI助手。",
+                "app-fibonacci-desc": "具有设计器定制和分析功能的高级QR码生成器和扫描器。",
+                "app-gagarin-desc": "支持视频、音频和文档批量处理的通用文件转换器。",
+                "app-jobs-desc": "用于电影级内容的高质量视频下载器，支持高达8K的分辨率。",
+                "app-lumiere-desc": "强大的视频编辑器，优化后可在任何PC上运行——从快速社交剪辑到完整长度的功能。",
+                "app-marilyn-desc": "具有独特可定制\"语音角色\"的语音合成和语音识别引擎。",
+                "app-newton-desc": "将您的触摸板变成随时随地制作节拍的MIDI控制器。",
+                "app-picasso-desc": "先进的栅格和矢量图形编辑器，配备AI驱动的工具，可创建令人惊叹的视觉效果。",
+                "app-picasso-lite-desc": "专业Picasso Art编辑器的轻量高速版本。非常适合日常任务：照片修饰、社交媒体图像准备、色彩校正和裁剪。",
+                "app-michael-desc": "创建酷炫的3D文本并将其导出为PNG或JPG用于您的项目。",
+                "app-tarantino-desc": "使用灵活的质量和源设置录制屏幕和网络摄像头。",
+                "app-kailed-desc": "强大的抽象图案和纹理生成器，支持分形、渐变和AI优化的视觉复杂性。",
+                "app-mondrian-desc": "专业的色彩分析和调色板应用程序。支持从图像中提取主色、生成色彩和谐和创建主题方案。",
+                "app-william-desc": "具有现代GUI的专业音频编辑应用程序。提供全面的声音处理工具，包括均衡器、压缩、混响和降噪。",
                 "contacts-title": "我们的联系方式",
                 "youtube-title": "YouTube",
                 "youtube-desc": "关注更新和教程",
@@ -996,6 +1348,26 @@
                 "hero-p3": "¡Únete a nuestra comunidad y sigue el desarrollo del proyecto!",
                 "highlight": "Únete a nuestra comunidad",
                 "highlight-text": "y sigue el desarrollo del proyecto!",
+                "applications-title": "Aplicaciones Möbius",
+                "applications-intro": "Möbius es una plataforma unificada que contiene estas poderosas aplicaciones especializadas:",
+                "app-name-header": "Aplicación",
+                "app-description-header": "Descripción",
+                "app-platform-header": "Plataforma",
+                "app-proxy-desc": "Potente administrador de conexiones proxy: HTTP/HTTPS, SOCKS4/5, cadena de proxies, optimización de velocidad con IA, verificación de salud masiva, monitoreo, exportación y modo fuera de línea. Perfecto para especialistas en SEO, desarrolladores y especialistas en marketing digital.",
+                "app-chopin-desc": "Una estación de trabajo de audio digital (DAW) completa con un asistente de IA para composición y masterización musical.",
+                "app-fibonacci-desc": "Un generador y escáner de códigos QR avanzado con personalización de diseño y análisis.",
+                "app-gagarin-desc": "Un convertidor de archivos universal que admite video, audio y documentos con procesamiento por lotes.",
+                "app-jobs-desc": "Un descargador de video de alta calidad para contenido de grado cinematográfico con soporte para resoluciones de hasta 8K.",
+                "app-lumiere-desc": "Un potente editor de video optimizado para ejecutarse en cualquier PC, desde clips rápidos para redes sociales hasta largometrajes completos.",
+                "app-marilyn-desc": "Un motor de síntesis de voz y reconocimiento de voz con \"personas de voz\" únicas y personalizables.",
+                "app-newton-desc": "Un controlador MIDI que convierte tu panel táctil en un instrumento para crear ritmos en cualquier momento y lugar.",
+                "app-picasso-desc": "Un editor de gráficos rasterizados y vectoriales avanzado, equipado con herramientas impulsadas por IA para crear efectos visuales impresionantes.",
+                "app-picasso-lite-desc": "Una versión ligera y de alta velocidad del editor profesional Picasso Art. Perfecto para tareas cotidianas: retoque fotográfico, preparación de imágenes para redes sociales, corrección de color y recorte.",
+                "app-michael-desc": "Crea texto 3D genial y expórtalo a PNG o JPG para tus proyectos.",
+                "app-tarantino-desc": "Graba tu pantalla y cámara web con configuraciones de calidad y fuentes flexibles.",
+                "app-kailed-desc": "Un potente generador de patrones y texturas abstractas con soporte para fractales, gradientes y complejidad visual optimizada por IA.",
+                "app-mondrian-desc": "Aplicación profesional de análisis de color y paletas. Admite la extracción de colores dominantes de imágenes, la generación de armonías de color y la creación de esquemas temáticos.",
+                "app-william-desc": "Aplicación de edición de audio profesional con interfaz gráfica moderna. Proporciona un conjunto completo de herramientas de procesamiento de sonido que incluyen ecualizador, compresión, reverberación y reducción de ruido.",
                 "contacts-title": "Nuestros contactos",
                 "youtube-title": "YouTube",
                 "youtube-desc": "Sigue las actualizaciones y tutoriales",
